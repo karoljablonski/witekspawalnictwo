@@ -1,0 +1,24 @@
+section.information {
+    width: 100%;
+    background-color: rgb(167, 118, 118);
+
+    div.information_wrapper {
+        max-width: $desktop-breakpoint;
+        margin: 0 auto;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            margin: 0 100px;
+            line-height: 30px;
+            font-size: 15px;
+            color: white;
+
+            span {
+                color: white;
+                font-size: 40px;
+            }
+        }
+    }
+}

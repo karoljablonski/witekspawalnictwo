@@ -1,0 +1,44 @@
+//fonts
+//font-family: 'Yeseva One', cursive;
+@font-face {
+    font-family: Bozon;
+    src: url(../fonts/Bozon-Regular.otf);
+}
+
+@font-face {
+    font-family: Bozon bold;
+    src: url(../fonts/Bozon-Bold.otf);
+}
+
+@font-face {
+    font-family: Bozon book;
+    src: url(../fonts/Bozon-Book.otf);
+}
+
+//breakpoints:
+$desktop-breakpoint: 1300px;
+
+
+
+//colors:
+$logo-color: #252422;
+$nav-links-color: #252422;
+$nav-links-hover-color: #EB5E28;
+$element-color: #EB5E28;
+$third-color: #ccc5b9;
+
+
+//mixins and classess:
+.fixed {
+    position: sticky;
+    top: 0;
+    left: 0;
+    // height: 100px;
+    transition: 0.5s;
+}
+
+@mixin desktop-breakpoint-wrapper {
+    max-width: $desktop-breakpoint;
+    margin: 0 auto;
+    height: 100%;
+}
