@@ -1,0 +1,111 @@
+section.little_gallery {
+    height: 100vh;
+    background-color: $logo-color;
+
+    div.little_gallery_img_wrapper {
+        @include desktop-breakpoint-wrapper;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-top: 50px;
+
+
+        div.little_gallery_img {
+            margin-top: 5vh;
+            position: relative;
+            width: 30%;
+            height: 50vh;
+            overflow: hidden;
+            border-radius: 15px;
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                height: 70vh;
+            }
+
+            img {
+                width: 150%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: 1s;
+
+                &:nth-child(2) {
+                    transition: 1s;
+                    animation: little_gallery_img_toggler 10s linear infinite;
+                }
+
+                &:hover {
+                    width: 180%;
+                }
+            }
+
+            &:nth-child(2) {
+                img {
+                    width: 180%;
+
+                    &:hover {
+                        width: 210%;
+                    }
+                }
+            }
+
+        }
+
+        button.little_gallery_button {
+            height: 100px;
+            position: absolute;
+            bottom: 10vh;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 60px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: $element-color;
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+                background-color: #b44e20;
+            }
+
+            a {
+                font-family: Bozon book;
+                display: block;
+                text-decoration: none;
+                font-size: 2.5rem;
+                color: white;
+            }
+        }
+    }
+}
+
+@keyframes little_gallery_img_toggler {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    45% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    50% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    95% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

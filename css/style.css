@@ -11,6 +11,7 @@
 
 body {
   font-family: Bozon;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -26,6 +27,11 @@ body {
 @font-face {
   font-family: Bozon book;
   src: url(../fonts/Bozon-Book.otf);
+}
+
+@font-face {
+  font-family: Bozon-black;
+  src: url(../fonts/Bozon-Black.otf);
 }
 
 .fixed {
@@ -63,7 +69,7 @@ section.information div.information_wrapper span {
 
 section.information div.information_wrapper span span {
   color: white;
-  font-size: 40px;
+  font-size: 15px;
 }
 
 nav.main_nav {
@@ -112,8 +118,9 @@ nav.main_nav div.main_nav_wrapper ul li:nth-child(1) a {
 }
 
 nav.main_nav div.main_nav_wrapper ul li a {
-  padding: 20px;
-  font-size: 20px;
+  position: relative;
+  padding: 10px;
+  font-size: 18px;
   text-decoration: none;
   color: #252422;
   -webkit-transition: .2s;
@@ -126,7 +133,7 @@ nav.main_nav div.main_nav_wrapper ul li a:hover, nav.main_nav div.main_nav_wrapp
 
 header.main_header {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-color: #252422;
 }
 
@@ -143,7 +150,7 @@ header.main_header div.main_header_wrapper div.border {
   right: 3%;
   height: 80%;
   width: 60%;
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
 header.main_header div.main_header_wrapper div.border div.img-holder {
@@ -156,6 +163,8 @@ header.main_header div.main_header_wrapper div.border div.img-holder {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 header.main_header div.main_header_wrapper h1.name_last_work {
@@ -166,7 +175,7 @@ header.main_header div.main_header_wrapper h1.name_last_work {
   width: 20%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #ccc5b9;
+  color: white;
   font-size: 60px;
   line-height: 1.8;
   text-shadow: 3px 3px 5px #222;
@@ -200,6 +209,7 @@ header.main_header div.main_header_wrapper div.button_holder button.browse_galle
   border: 1px solid white;
   border-radius: 5px;
   background-color: #EB5E28;
+  cursor: pointer;
 }
 
 header.main_header div.main_header_wrapper div.button_holder button.browse_gallery:hover, header.main_header div.main_header_wrapper div.button_holder button.browse_gallery:active {
@@ -212,5 +222,451 @@ header.main_header div.main_header_wrapper div.button_holder button.browse_galle
   text-decoration: none;
   font-size: 2.5rem;
   color: white;
+}
+
+section.little_about {
+  width: 100%;
+  min-height: 90vh;
+  background-color: #fffcf2;
+}
+
+section.little_about div.little_about_wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.little_about div.little_about_wrapper > * {
+  width: 40%;
+  height: 80%;
+}
+
+section.little_about div.little_about_wrapper header.section_content p {
+  font-family: Bozon book;
+  line-height: 2;
+  font-size: 80px;
+  color: #252422;
+}
+
+section.little_about div.little_about_experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.little_about div.little_about_experience span {
+  background-image: url(../img/welding-2819144_1920.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Bozon-black;
+  display: block;
+  text-align: center;
+  font-size: 450px;
+  line-height: .9;
+  letter-spacing: 5px;
+  color: transparent;
+}
+
+section.little_about div.little_about_experience span span {
+  font-family: Bozon bold;
+  text-align: center;
+  font-size: 40px;
+  text-align: center;
+  color: #fffcf2;
+}
+
+section.little_about button.browse_about {
+  margin-top: 50px;
+  width: 320px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #EB5E28;
+  cursor: pointer;
+}
+
+section.little_about button.browse_about:hover, section.little_about button.browse_about:active {
+  background-color: #b44e20;
+}
+
+section.little_about button.browse_about a {
+  font-family: Bozon book;
+  display: block;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: white;
+}
+
+section.little_gallery {
+  height: 100vh;
+  background-color: #252422;
+}
+
+section.little_gallery div.little_gallery_img_wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img {
+  margin-top: 5vh;
+  position: relative;
+  width: 30%;
+  height: 50vh;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(1), section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(3) {
+  height: 70vh;
+}
+
+section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img img {
+  width: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img img:nth-child(2) {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: little_gallery_img_toggler 10s linear infinite;
+          animation: little_gallery_img_toggler 10s linear infinite;
+}
+
+section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img img:hover {
+  width: 180%;
+}
+
+section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(2) img {
+  width: 180%;
+}
+
+section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(2) img:hover {
+  width: 210%;
+}
+
+section.little_gallery div.little_gallery_img_wrapper button.little_gallery_button {
+  height: 100px;
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 320px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #EB5E28;
+  cursor: pointer;
+}
+
+section.little_gallery div.little_gallery_img_wrapper button.little_gallery_button:hover, section.little_gallery div.little_gallery_img_wrapper button.little_gallery_button:active {
+  background-color: #b44e20;
+}
+
+section.little_gallery div.little_gallery_img_wrapper button.little_gallery_button a {
+  font-family: Bozon book;
+  display: block;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: white;
+}
+
+@-webkit-keyframes little_gallery_img_toggler {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  45% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  95% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes little_gallery_img_toggler {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  45% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  95% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+section.little_services {
+  width: 100%;
+  min-height: 90vh;
+  background-color: #fffcf2;
+}
+
+section.little_services div.little_services_wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+section.little_services div.little_services_wrapper > * {
+  width: 40%;
+  height: 80%;
+}
+
+section.little_services div.little_services_wrapper header.services_content p {
+  padding-left: 20px;
+  font-family: Bozon book;
+  line-height: 2;
+  font-size: 80px;
+  color: #252422;
+}
+
+section.little_services div.little_services_wrapper div.little_services_experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.little_services div.little_services_wrapper div.little_services_experience span {
+  background-image: url(../img/worker-5736096_1920.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Bozon-black;
+  display: block;
+  text-align: center;
+  font-size: 100px;
+  line-height: .9;
+  letter-spacing: 5px;
+  color: transparent;
+}
+
+section.little_services div.little_services_wrapper div.little_services_experience span span.bigger {
+  font-size: 1.6em;
+  letter-spacing: normal;
+}
+
+section.little_services div.little_services_wrapper button.browse_about {
+  margin-top: 50px;
+  width: 320px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #EB5E28;
+  cursor: pointer;
+}
+
+section.little_services div.little_services_wrapper button.browse_about:hover, section.little_services div.little_services_wrapper button.browse_about:active {
+  background-color: #b44e20;
+}
+
+section.little_services div.little_services_wrapper button.browse_about a {
+  font-family: Bozon book;
+  display: block;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 33vh;
+  background-color: #fffcf2;
+}
+
+footer div.footer_wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer div.footer_wrapper > * {
+  width: 40%;
+  color: #ccc5b9;
+  background-color: #403d39;
+}
+
+footer div.footer_wrapper div {
+  height: 80%;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+footer div.footer_wrapper div.firm_data {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.footer_wrapper div.firm_data p {
+  font-size: 2rem;
+}
+
+footer div.footer_wrapper div.firm_data p.firm_name {
+  font-family: Bozon bold;
+}
+
+footer div.footer_wrapper div.firm_data button.google_maps {
+  width: 200px;
+  height: 45px;
+  cursor: pointer;
+  border: 5px solid #403d39;
+  border-radius: 10px;
+}
+
+footer div.footer_wrapper div.firm_data button.google_maps a {
+  font-family: Bozon-black;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #403d39;
+}
+
+footer div.footer_wrapper div.contact_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.footer_wrapper div.contact_data p {
+  font-family: Bozon bold;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+footer div.footer_wrapper p.real_footer {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+  font-family: Bozon;
+  font-size: 1.5rem;
+  color: #403d39;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+footer div.footer_wrapper p.real_footer a {
+  color: #403d39;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

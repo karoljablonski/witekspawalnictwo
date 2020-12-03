@@ -1,0 +1,84 @@
+section.little_about {
+    width: 100%;
+    min-height: 90vh;
+    background-color: $forth-color;
+
+    div.little_about_wrapper {
+        @include desktop-breakpoint-wrapper;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &>* {
+            width: 40%;
+            height: 80%;
+        }
+
+        header.section_content {
+
+            p {
+                font-family: Bozon book;
+                line-height: 2;
+                font-size: 80px;
+                color: $logo-color;
+            }
+        }
+    }
+
+    div.little_about_experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            background-image: url(../img/welding-2819144_1920.jpg);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Bozon-black;
+            display: block;
+            text-align: center;
+            font-size: 450px;
+            line-height: .9;
+            letter-spacing: 5px;
+            color: transparent;
+
+
+            span {
+                font-family: Bozon bold;
+
+                text-align: center;
+                font-size: 40px;
+                text-align: center;
+                color: $forth-color;
+            }
+        }
+    }
+
+    button.browse_about {
+        margin-top: 50px;
+        width: 320px;
+        height: 60px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: $element-color;
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+            background-color: #b44e20;
+        }
+
+        a {
+            font-family: Bozon book;
+            display: block;
+            text-decoration: none;
+            font-size: 2.5rem;
+            color: white;
+        }
+    }
+}

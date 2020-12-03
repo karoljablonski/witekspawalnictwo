@@ -7,7 +7,6 @@ nav.main_nav {
     div.main_nav_wrapper {
         max-width: $desktop-breakpoint;
         margin: 0 auto;
-        // height: 200px;
         display: flex;
         justify-content: space-between;
 
@@ -36,16 +35,19 @@ nav.main_nav {
                 }
 
                 a {
-                    padding: 20px;
-                    font-size: 20px;
+                    position: relative;
+                    padding: 10px;
+                    font-size: 18px;
                     text-decoration: none;
                     color: $nav-links-color;
                     transition: .2s;
 
                     &:hover,
                     &:active {
-                        color: $nav-links-hover-color;
+                        color: $element-color;
                     }
+
+
                 }
             }
         }

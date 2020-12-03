@@ -6,6 +6,7 @@
     <title>Witek | Usługi ślusarsko-spawalnicze | Strona główna</title>
     <meta name="keywords" content="spawacz, spawanie, ślusarz, ślusarskie, usługi, Suwałki">
     <meta name="description" content="Wykonuję usługi ślusarsko-spawalnicze na terenie Suwałk. Bramy, ogrodzenia, balustrady, maszyny przemysłowe">
+    <script src="https://kit.fontawesome.com/8af9462368.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/hamburgers.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
@@ -14,8 +15,8 @@
 <body>
     <section class="information">
         <div class="information_wrapper">
-            <span>e-mail: witek.spawalnictwo@gmail.com</span>
-            <span>nr tel.: 663-387-465</span>
+            <span><span class="fas fa-envelope"></span> e-mail: witek.spawalnictwo@gmail.com</span>
+             <span><span class="fas fa-phone-alt"></span> nr tel.: 663-387-465</span>
       </div>
     </section>
     <nav class="main_nav">
@@ -38,6 +39,16 @@
             </ul>
         </div>
     </nav>
+    <section class="little_about">
+        <div class="little_about_wrapper">
+        <!-- pomysl na to rodem ze stron apple XD np z jednej strony ciekawie 3 wersy naglowka, z drugiej fajnie przedstawiona cyfra 15 -->
+        <header class="section_content"><p>Wykonuję.</p><p>Naprawiam.</p><p>Regeneruję.</p></header>
+        <div class="little_about_experience">
+            <span>15 <span>lat doświadczenia.</span></span>
+        </div>
+        <button class="browse_about"><a href="about.html">Czytaj więcej</a></button>
+    </div>
+    </section>
     <header class="main_header">
         <div class="main_header_wrapper">
         <!-- zdjęcie ostatniego zlecienia w css: background! -->
@@ -48,37 +59,37 @@
         <button type="button" class="browse_gallery"><a href="gallery.html">Zobacz galerię</a></button>
         </div>
     </div>
-    </header>
-    <section class="little_about">
-        <!-- pomysl na to rodem ze stron apple XD np z jednej strony ciekawie 3 wersy naglowka, z drugiej fajnie przedstawiona cyfra 15 -->
-        <header class="section_content"><p>Wykonuję.</p><p>Naprawiam.</p><p>Regeneruję.</p></header>
-        <div class="littile_about_experience">
-            15 lat doświadczenia.
+    </header> 
+    <section class="little_services">
+        <div class="little_services_wrapper">
+        <!-- tu podobnie jak little_about, ale zamienić miejscami 3 wersy i z drugiej strony jakiś feature z "metalu" lub nawet "metal" -->
+        <header class="services_content"><p>Bramy.</p><p>Maszyny.</p><p>Konstrukcje.</p></header>
+        <div class="little_services_experience">
+            <span>Wszystko <span class="bigger"> <p> z </p> metalu.</span></span>
+        </div>
+        <button class="browse_about"><a href="services.html">Zobacz usługi</a></button>
         </div>
     </section>
     <section class="little_gallery">
         <!-- tutaj pomysł na mini galerię, kady div toggluje dwoma zdjęciami, a button jest pomiędzy tymi divami, dość duzy button. -->
         <div class="little_gallery_img_wrapper">
             <div class="little_gallery_img">
-                img
+                <img src="gallery/schody3-1_3.jpg" alt="schody3-1">
+                <img src="gallery/schody4.jpg" alt="schody4">
             </div>
             <div class="little_gallery_img">
-                img
+                <img src="gallery/bramawjazdowa1-1.jpg" alt="">
+                <img src="gallery/bramawjazdowa1-2.jpg" alt="">
             </div>
             <div class="little_gallery_img">
-                img
+                <img src="gallery/nielegalna.jpg" alt="">
+                <img src="gallery/drzwi2.jpg" alt="">
             </div>
-            <button class="little_gallery_button"><a href="gallery.html">zobacz wszystkie prace</a></button>
-        </div>
-    </section>
-    <section class="little_services">
-        <!-- tu podobnie jak little_about, ale zamienić miejscami 3 wersy i z drugiej strony jakiś feature z "metalu" lub nawet "metal" -->
-        <header class="section_content"><p>Bramy.</p><p>Maszyny.</p><p>A nawet meble.</p></header>
-        <div class="littile_about_services">
-            Wszystko z metalu.
+            <button class="little_gallery_button"><a href="gallery.html">Zobacz galerię</a></button>
         </div>
     </section>
     <footer>
+        <div class="footer_wrapper">
         <div class="firm_data">
             <p class="firm_name">
                 Usługi ślusarsko-spawalnicze "Witek"
@@ -86,22 +97,24 @@
             <p class="firm_adress">
                 ul. Mikołaja Reja 78/52, 16-400 Suwałki
             </p>
-            <button class="google_maps"><a target="_blank" href="https://goo.gl/maps/YJHPwTQETQmErTVz9">Zobacz na mapie</a></button>
             <p class="nip">
                 NIP: 123456789
             </p>
+            <button class="google_maps"><a target="_blank" href="https://goo.gl/maps/YJHPwTQETQmErTVz9">Zobacz na mapie</a></button>
         </div>
         <div class="contact_data">
+            <p>Kontakt:</p>
             <p class="email_adress">
-                witek.spawalnictwo@gmail.com
+                <span class="fas fa-envelope"></span> witek.spawalnictwo@gmail.com <span class="fas fa-envelope"></span>
             </p>
             <p class="phone_number">
-                663-387-465
+                <span class="fas fa-phone-alt"></span> 663-387-465 <span class="fas fa-phone"></span>
             </p>
         </div>
-        <div class="real_footer">
-            &copy; All rights reserved. Developed by Karol Jabłoński <a target="_blank" href="https://github.com/karoljablonski">/ikonka githuba</a>
-        </div>
+        <p class="real_footer">
+            &copy; All rights reserved. Developed by Karol Jabłoński <a target="_blank" href="https://github.com/karoljablonski"> <span class="fab fa-github"></span></a>
+        </p>
+    </div>
     </footer>
     <script>
         //nadanie fixed dla nava po zeskrolowaniu .information
@@ -116,6 +129,32 @@
             if(scrollY <= infoHeight){
                 nav_main_nav.classList.remove('fixed');
             };
+        });
+
+        //proba zrobienia napisow floating dla little_about i little_services
+        //nie wiem czemu pierwsza sekcja "rozwala napisy" a skrolowanie drugiej sekcji "scala" p do jednego marginu :O
+        const wykonuje = document.querySelector('header.section_content>p:nth-child(1)');
+        const naprawiam = document.querySelector('header.section_content>p:nth-child(2)');
+        const regeneruje = document.querySelector('header.section_content>p:nth-child(3)');
+        const bramy = document.querySelector('header.services_content>p:nth-child(1)');
+        const maszyny = document.querySelector('header.services_content>p:nth-child(2)');
+        const konstrukcje = document.querySelector('header.services_content>p:nth-child(3)');
+        const sekcjaAbout = document.querySelector('section.little-about');
+        const sekcjaServices = document.querySelector('section.little_services');
+        
+        window.addEventListener("scroll", function(){
+            valueY = window.scrollY;
+            wykonuje.style.marginLeft = .15 * valueY + "px";
+            naprawiam.style.marginLeft = -.1 * valueY + "px";
+            regeneruje.style.marginLeft = .1 * valueY + "px";
+        });
+        window.addEventListener("scroll", function(){
+            valueY = window.scrollY;
+            if(valueY > (sekcjaServices.offsetTop - window.innerHeight)){
+            bramy.style.marginLeft = -.15 * (valueY - sekcjaServices.offsetTop) + "px";
+            maszyny.style.marginLeft = .1 * (valueY - sekcjaServices.offsetTop) + "px";
+            konstrukcje.style.marginLeft = -.1 * (valueY - sekcjaServices.offsetTop) + "px";
+            }
         });
 
         //js for hamburger start

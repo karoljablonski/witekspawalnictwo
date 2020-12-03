@@ -1,6 +1,6 @@
 header.main_header {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-color: $logo-color;
 
     div.main_header_wrapper {
@@ -13,7 +13,7 @@ header.main_header {
             right: 3%;
             height: 80%;
             width: 60%;
-            border: 2px solid white;
+            border: 2px solid rgba(255, 255, 255, 0.4);
 
             div.img-holder {
                 position: absolute;
@@ -25,6 +25,7 @@ header.main_header {
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                filter: brightness(60%);
             }
         }
 
@@ -35,11 +36,10 @@ header.main_header {
             left: 5%;
             width: 20%;
             transform: translateY(-50%);
-            color: $third-color;
+            color: white;
             font-size: 60px;
             line-height: 1.8;
             text-shadow: 3px 3px 5px #222;
-            // overflow: hidden;
         }
 
         h2.date_last_work {
@@ -68,6 +68,7 @@ header.main_header {
                 border: 1px solid white;
                 border-radius: 5px;
                 background-color: $element-color;
+                cursor: pointer;
 
                 &:hover,
                 &:active {
@@ -83,7 +84,5 @@ header.main_header {
                 }
             }
         }
-
-
     }
 }

@@ -15,6 +15,11 @@
     src: url(../fonts/Bozon-Book.otf);
 }
 
+@font-face {
+    font-family: Bozon-black;
+    src: url(../fonts/Bozon-Black.otf);
+}
+
 //breakpoints:
 $desktop-breakpoint: 1300px;
 
@@ -23,9 +28,10 @@ $desktop-breakpoint: 1300px;
 //colors:
 $logo-color: #252422;
 $nav-links-color: #252422;
-$nav-links-hover-color: #EB5E28;
 $element-color: #EB5E28;
 $third-color: #ccc5b9;
+$forth-color: #fffcf2;
+$fifth-color: #403d39;
 
 
 //mixins and classess:

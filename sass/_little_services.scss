@@ -1,0 +1,83 @@
+section.little_services {
+    width: 100%;
+    min-height: 90vh;
+    background-color: $forth-color;
+
+    div.little_services_wrapper {
+        @include desktop-breakpoint-wrapper;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+
+        &>* {
+            width: 40%;
+            height: 80%;
+        }
+
+        header.services_content {
+            p {
+                padding-left: 20px;
+                font-family: Bozon book;
+                line-height: 2;
+                font-size: 80px;
+                color: $logo-color;
+            }
+        }
+
+
+        div.little_services_experience {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                background-image: url(../img/worker-5736096_1920.jpg);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: cover;
+                background-repeat: no-repeat;
+                font-family: Bozon-black;
+                display: block;
+                text-align: center;
+                font-size: 100px;
+                line-height: .9;
+                letter-spacing: 5px;
+                color: transparent;
+
+                span.bigger {
+                    font-size: 1.6em;
+                    letter-spacing: normal;
+                }
+
+            }
+        }
+
+        button.browse_about {
+            margin-top: 50px;
+            width: 320px;
+            height: 60px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: $element-color;
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+                background-color: #b44e20;
+            }
+
+            a {
+                font-family: Bozon book;
+                display: block;
+                text-decoration: none;
+                font-size: 2.5rem;
+                color: white;
+            }
+
+        }
+    }
+}
