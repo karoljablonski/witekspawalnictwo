@@ -674,11 +674,24 @@ header.about_header {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  position: relative;
+}
+
+header.about_header div.where_are_you {
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+  font-family: Bozon bold;
+  font-size: 7rem;
+  color: #fffcf2;
 }
 
 section.big_about {
-  height: 110vh;
+  height: 130vh;
   background-color: #252422;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 section.big_about div.big_about_wrapper {
@@ -688,53 +701,71 @@ section.big_about div.big_about_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 95%;
+  width: 90%;
+  margin: auto;
+}
+
+section.big_about div.big_about_wrapper div.big_about_img {
+  width: 45%;
+  height: 90%;
+  background: url(../img/welding-2819144_1920.jpg);
+  background-position: 40% 20%;
+  -webkit-box-shadow: 0 0 10px 20px #252422;
+          box-shadow: 0 0 10px 20px #252422;
+  background-repeat: no-repeat;
 }
 
 section.big_about div.big_about_wrapper div.p-wrapper {
-  width: 70%;
+  width: 45%;
+  height: 90%;
+  background-color: rgba(64, 61, 57, 0.5);
   overflow: hidden;
   font-family: Bozon book;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 section.big_about div.big_about_wrapper div.p-wrapper p {
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 2;
   padding: 2rem;
   width: 100%;
   color: #fffcf2;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 section.big_about div.big_about_wrapper div.p-wrapper ul {
   list-style: none;
-  padding: 2rem;
   width: 80%;
 }
 
 section.big_about div.big_about_wrapper div.p-wrapper ul li {
   position: relative;
-  padding: 10px;
+  padding: 7px 0 7px 50px;
   display: block;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: #fffcf2;
-  padding-left: 150px;
   text-align: left;
 }
 
 section.big_about div.big_about_wrapper div.p-wrapper ul li::before {
   content: "";
   position: absolute;
-  bottom: 10px;
+  bottom: 2px;
   left: auto;
   height: 3px;
   width: 0;
@@ -767,9 +798,155 @@ section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(5) {
   margin-left: 100px;
 }
 
-header.services_header {
+header.gallery_header {
   height: 40vh;
   background-image: url(../img/fence-450670_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+
+header.gallery_header div.where_are_you {
+  position: absolute;
+  text-transform: capitalize;
+  bottom: 5%;
+  left: 15%;
+  font-family: Bozon bold;
+  font-size: 7rem;
+  color: #fffcf2;
+}
+
+section.big_gallery div.big_gallery_wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 200vh;
+}
+
+section.big_gallery div.big_gallery_wrapper nav.gallery_navigation {
+  margin-top: 70px;
+  width: 100%;
+  height: 100px;
+}
+
+section.big_gallery div.big_gallery_wrapper nav.gallery_navigation ul {
+  list-style-type: none;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.big_gallery div.big_gallery_wrapper nav.gallery_navigation ul li {
+  width: 30%;
+  height: 80%;
+  text-align: center;
+}
+
+section.big_gallery div.big_gallery_wrapper nav.gallery_navigation ul li label {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 3px solid #EB5E28;
+  font-family: Bozon;
+  font-size: 3rem;
+  color: #252422;
+  cursor: pointer;
+}
+
+section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper {
+  background-color: #fffcf2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper input {
+  display: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div {
+  position: relative;
+  margin: 20px 0;
+  width: 30%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div a img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div a img:hover {
+  width: 120%;
+}
+
+#radio1:checked ~ .bramy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#radio2:checked ~ .maszyny {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#radio3:checked ~ .inne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header.services_header {
+  height: 40vh;
+  background-image: url(../img/worker-5736096_1920.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;

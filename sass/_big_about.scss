@@ -4,61 +4,84 @@ header.about_header {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+    position: relative;
+
+    div.where_are_you {
+        position: absolute;
+        bottom: 5%;
+        left: 15%;
+        font-family: Bozon bold;
+        font-size: 7rem;
+        color: $forth-color;
+    }
 }
 
 section.big_about {
 
-    height: 110vh;
+    height: 130vh;
     background-color: $logo-color;
+    display: flex;
 
     div.big_about_wrapper {
         @include desktop-breakpoint-wrapper;
         display: flex;
-        flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        height: 95%;
+        width: 90%;
+        margin: auto;
+
+        div.big_about_img {
+            width: 45%;
+            height: 90%;
+            background: url(../img/welding-2819144_1920.jpg);
+            background-position: 40% 20%;
+            box-shadow: 0 0 10px 20px $logo-color;
+            background-repeat: no-repeat;
+        }
 
         div.p-wrapper {
-            width: 70%;
-            // background-color: rgba($element-color, 0.5);
+            width: 45%;
+            height: 90%;
+            background-color: rgba($fifth-color, 0.5);
             overflow: hidden;
             font-family: Bozon book;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-around;
 
 
 
             p {
                 font-size: 2rem;
-                line-height: 1.5;
+                line-height: 2;
                 padding: 2rem;
                 width: 100%;
                 color: $forth-color;
-                transition: 0.5s;
             }
 
             ul {
                 list-style: none;
-                padding: 2rem;
                 width: 80%;
 
 
                 li {
                     position: relative;
-                    padding: 10px;
+                    padding: 7px 0 7px 50px;
                     display: block;
-                    font-size: 2.5rem;
+                    font-size: 1.8rem;
                     color: $forth-color;
-                    padding-left: 150px;
                     text-align: left;
 
                     &::before {
                         content: "";
                         position: absolute;
-                        bottom: 10px;
+                        bottom: 2px;
                         left: auto;
                         height: 3px;
                         width: 0;
                         background-color: white;
-                        // z-index: -1;
                         transition: .2s ease-in-out;
                     }
 

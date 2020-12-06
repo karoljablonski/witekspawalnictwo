@@ -1,3 +1,4 @@
+<!-- This page uses Lightbox2 v2.11.3 by Lokesh Dhakar https://lokeshdhakar.com/projects/lightbox2/ -->
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/hamburgers.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -31,11 +33,11 @@
             </ul>
         </div>
     </nav>
-    <main>
-        <header>
-        <h1 class="gallery_header">galeria</h1>
-        </header>
-        <section class="gallery_wrapper">
+    <header class="gallery_header">
+        <div class="where_are_you">galeria.</div>
+    </header>
+        <section class="big_gallery">
+            <div class="big_gallery_wrapper">
             <nav class="gallery_navigation">
                 <ul>
                     <li><label for="radio1">Bramy, balustrady</label></li>
@@ -47,21 +49,30 @@
                 <input checked type="radio" name="radio" id="radio1">
                 <input type="radio" name="radio" id="radio2">
                 <input type="radio" name="radio" id="radio3">
-            <div class="category_wrapper bramy">
-                zdjęcia - grid vs flex popróbować
+                <div class="category_wrapper bramy">
                 <!-- mozna zrobic pojemniki dla pojedynczych zdjec, i po najechaniu zwiekszac ich rozmiar, ale na pojemnik>overflow:hidden + inne pojebaństwa :D -->
-            </div>
-            <div class="category_wrapper maszyny">
-                zdjęcia - grid vs flex popróbować
-            </div>
-            <div class="category_wrapper inne">
-                zdjęcia - grid vs flex popróbować
+                    <div><a href="gallery/schody1.jpg" data-lightbox="bramy"><img src="gallery/schody1.jpg" alt=""></a></div>
+                    <div><a href="gallery/schody1.jpg" data-lightbox="bramy"><img src="gallery/schody1.jpg" alt=""></a></div>
+                    <div><a href="gallery/schody1.jpg" data-lightbox="bramy"><img src="gallery/schody1.jpg" alt=""></a></div>
+                </div>
+                    <div class="category_wrapper maszyny">
+                    <div><a href="gallery/schody3-1.jpg" data-lightbox="maszyny"><img src="gallery/schody3-1.jpg" alt=""></a></div>
+                    <div><a href="gallery/schody3-1.jpg" data-lightbox="maszyny"><img src="gallery/schody3-1.jpg" alt=""></a></div>
+                    <div><a href="gallery/schody3-1.jpg" data-lightbox="maszyny"><img src="gallery/schody3-1.jpg" alt=""></a></div>
+                </div>
+                <div class="category_wrapper inne">
+                    <div><a href="gallery/lyzka1-1.jpg" data-lightbox="inne"><img src="gallery/lyzka1-1.jpg" alt=""></a></div>
+                    <div><a href="gallery/lyzka1-1.jpg" data-lightbox="inne"><img src="gallery/lyzka1-1.jpg" alt=""></a></div>
+                    <div><a href="gallery/lyzka1-1.jpg" data-lightbox="inne"><img src="gallery/lyzka1-1.jpg" alt=""></a></div>
+                    <div><a href="gallery/lyzka1-1.jpg" data-lightbox="inne"><img src="gallery/lyzka1-1.jpg" alt=""></a></div>
+                    <div><a href="gallery/lyzka1-1.jpg" data-lightbox="inne"><img src="gallery/lyzka1-1.jpg" alt=""></a></div>
+                    <div><a href="gallery/lyzka1-1.jpg" data-lightbox="inne"><img src="gallery/lyzka1-1.jpg" alt=""></a></div>
+                    
             </div>
         </section>
+    </div>
         </section>
 
-
-    </main>
     
     <footer>
         <div class="footer_wrapper">
@@ -91,6 +102,12 @@
         </p>
     </div>
     </footer>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        lightbox.option({
+          'albumLabel':	"Zdjęcie %1 z %2",
+        })
+    </script>
 </body>
 </html>
