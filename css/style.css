@@ -55,13 +55,11 @@ section.information div.information_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 section.information div.information_wrapper span {
-  margin: 0 100px;
   line-height: 30px;
   font-size: 15px;
   color: white;
@@ -556,7 +554,7 @@ section.little_services div.little_services_wrapper button.browse_about a {
 
 footer {
   width: 100%;
-  height: 33vh;
+  height: 40vh;
   background-color: #fffcf2;
 }
 
@@ -668,5 +666,112 @@ footer div.footer_wrapper p.real_footer {
 footer div.footer_wrapper p.real_footer a {
   color: #403d39;
   font-size: 1.5rem;
+}
+
+header.about_header {
+  height: 40vh;
+  background-image: url(../img/railing-3855288_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+section.big_about {
+  height: 110vh;
+  background-color: #252422;
+}
+
+section.big_about div.big_about_wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper {
+  width: 70%;
+  overflow: hidden;
+  font-family: Bozon book;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper p {
+  font-size: 2rem;
+  line-height: 1.5;
+  padding: 2rem;
+  width: 100%;
+  color: #fffcf2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper ul {
+  list-style: none;
+  padding: 2rem;
+  width: 80%;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper ul li {
+  position: relative;
+  padding: 10px;
+  display: block;
+  font-size: 2.5rem;
+  color: #fffcf2;
+  padding-left: 150px;
+  text-align: left;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: auto;
+  height: 3px;
+  width: 0;
+  background-color: white;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper ul li:hover::before {
+  width: 40px;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(1) {
+  margin-left: 0;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(2) {
+  margin-left: 25px;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(3) {
+  margin-left: 50px;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(4) {
+  margin-left: 75px;
+}
+
+section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(5) {
+  margin-left: 100px;
+}
+
+header.services_header {
+  height: 40vh;
+  background-image: url(../img/fence-450670_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

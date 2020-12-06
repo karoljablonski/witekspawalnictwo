@@ -1,0 +1,92 @@
+header.about_header {
+    height: 40vh;
+    background-image: url(../img/railing-3855288_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+section.big_about {
+
+    height: 110vh;
+    background-color: $logo-color;
+
+    div.big_about_wrapper {
+        @include desktop-breakpoint-wrapper;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        div.p-wrapper {
+            width: 70%;
+            // background-color: rgba($element-color, 0.5);
+            overflow: hidden;
+            font-family: Bozon book;
+
+
+
+            p {
+                font-size: 2rem;
+                line-height: 1.5;
+                padding: 2rem;
+                width: 100%;
+                color: $forth-color;
+                transition: 0.5s;
+            }
+
+            ul {
+                list-style: none;
+                padding: 2rem;
+                width: 80%;
+
+
+                li {
+                    position: relative;
+                    padding: 10px;
+                    display: block;
+                    font-size: 2.5rem;
+                    color: $forth-color;
+                    padding-left: 150px;
+                    text-align: left;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 10px;
+                        left: auto;
+                        height: 3px;
+                        width: 0;
+                        background-color: white;
+                        // z-index: -1;
+                        transition: .2s ease-in-out;
+                    }
+
+                    &:hover::before {
+                        width: 40px;
+                    }
+
+                    &:nth-child(1) {
+                        margin-left: 0;
+                    }
+
+                    &:nth-child(2) {
+                        margin-left: 25px;
+                    }
+
+                    &:nth-child(3) {
+                        margin-left: 50px;
+                    }
+
+                    &:nth-child(4) {
+                        margin-left: 75px;
+                    }
+
+                    &:nth-child(5) {
+                        margin-left: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

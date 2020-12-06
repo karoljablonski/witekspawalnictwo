@@ -7,13 +7,13 @@ section.information {
         margin: 0 auto;
         height: 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 
         span {
-            margin: 0 100px;
             line-height: 30px;
             font-size: 15px;
             color: white;
+
 
             span {
                 color: white;
