@@ -18,7 +18,7 @@ header.about_header {
 
 section.big_about {
 
-    height: 130vh;
+    height: 180vh;
     background-color: $logo-color;
     display: flex;
 
@@ -51,62 +51,65 @@ section.big_about {
             flex-wrap: nowrap;
             justify-content: space-around;
 
+            article.about_me {
 
 
-            p {
-                font-size: 2rem;
-                line-height: 2;
-                padding: 2rem;
-                width: 100%;
-                color: $forth-color;
-            }
 
-            ul {
-                list-style: none;
-                width: 80%;
-
-
-                li {
-                    position: relative;
-                    padding: 7px 0 7px 50px;
-                    display: block;
-                    font-size: 1.8rem;
+                p {
+                    font-size: 2rem;
+                    line-height: 2;
+                    padding: 3rem;
+                    width: 100%;
                     color: $forth-color;
-                    text-align: left;
+                }
 
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        bottom: 2px;
-                        left: auto;
-                        height: 3px;
-                        width: 0;
-                        background-color: white;
-                        transition: .2s ease-in-out;
-                    }
+                ul {
+                    list-style: none;
+                    width: 80%;
 
-                    &:hover::before {
-                        width: 40px;
-                    }
 
-                    &:nth-child(1) {
-                        margin-left: 0;
-                    }
+                    li {
+                        position: relative;
+                        padding: 15px 0 15px 50px;
+                        display: block;
+                        font-size: 1.8rem;
+                        color: $forth-color;
+                        text-align: left;
 
-                    &:nth-child(2) {
-                        margin-left: 25px;
-                    }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: 14px;
+                            left: auto;
+                            height: 1px;
+                            width: 0;
+                            background-color: $element-color;
+                            transition: .2s ease-in-out;
+                        }
 
-                    &:nth-child(3) {
-                        margin-left: 50px;
-                    }
+                        &:hover::before {
+                            width: 50px;
+                        }
 
-                    &:nth-child(4) {
-                        margin-left: 75px;
-                    }
+                        // &:nth-child(1) {
+                        //     margin-left: 0;
+                        // }
 
-                    &:nth-child(5) {
-                        margin-left: 100px;
+                        // &:nth-child(2) {
+                        //     margin-left: 25px;
+                        // }
+
+                        // &:nth-child(3) {
+                        //     margin-left: 50px;
+                        // }
+
+                        // &:nth-child(4) {
+                        //     margin-left: 75px;
+                        // }
+
+                        // &:nth-child(5) {
+                        //     margin-left: 100px;
+                        // }
                     }
                 }
             }

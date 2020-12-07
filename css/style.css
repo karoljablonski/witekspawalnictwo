@@ -12,6 +12,7 @@
 body {
   font-family: Bozon;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -273,7 +274,7 @@ section.little_about div.little_about_experience {
 }
 
 section.little_about div.little_about_experience span {
-  background-image: url(../img/welding-2819144_1920.jpg);
+  background-image: url(../img/welding-67640_640.jpg);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -554,8 +555,8 @@ section.little_services div.little_services_wrapper button.browse_about a {
 
 footer {
   width: 100%;
-  height: 40vh;
-  background-color: #fffcf2;
+  height: 35vh;
+  background-color: #ccc5b9;
 }
 
 footer div.footer_wrapper {
@@ -571,23 +572,21 @@ footer div.footer_wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 footer div.footer_wrapper > * {
-  width: 40%;
-  color: #ccc5b9;
-  background-color: #403d39;
+  width: 35%;
+  color: #403d39;
 }
 
 footer div.footer_wrapper div {
   height: 80%;
   border-radius: 20px;
   text-align: center;
-  margin-top: 15px;
 }
 
 footer div.footer_wrapper div.firm_data {
@@ -599,16 +598,17 @@ footer div.footer_wrapper div.firm_data {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 2;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 footer div.footer_wrapper div.firm_data p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 footer div.footer_wrapper div.firm_data p.firm_name {
@@ -619,16 +619,32 @@ footer div.footer_wrapper div.firm_data button.google_maps {
   width: 200px;
   height: 45px;
   cursor: pointer;
-  border: 5px solid #403d39;
-  border-radius: 10px;
+  border: 2px solid #403d39;
+  border-radius: 5px;
+  background-color: #403d39;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer div.footer_wrapper div.firm_data button.google_maps:hover {
+  background-color: #57534e;
+  border-color: #57534e;
 }
 
 footer div.footer_wrapper div.firm_data button.google_maps a {
-  font-family: Bozon-black;
+  font-family: Bozon;
   display: block;
   text-align: center;
   text-decoration: none;
-  color: #403d39;
+  color: #ccc5b9;
+}
+
+footer div.footer_wrapper div.separator {
+  height: 80%;
+  width: 1px;
+  background-color: #403d39;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 footer div.footer_wrapper div.contact_data {
@@ -642,28 +658,43 @@ footer div.footer_wrapper div.contact_data {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 footer div.footer_wrapper div.contact_data p {
   font-family: Bozon bold;
-  font-size: 2rem;
-  margin: 10px;
+  font-size: 1.8rem;
+  line-height: 2;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 
 footer div.footer_wrapper p.real_footer {
+  position: relative;
   width: 100%;
-  padding: 4px 0;
+  padding: 10px;
   text-align: center;
   font-family: Bozon;
-  font-size: 1.5rem;
   color: #403d39;
+  font-size: 1.5rem;
   background-color: rgba(0, 0, 0, 0);
 }
 
+footer div.footer_wrapper p.real_footer::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  background-color: #403d39;
+}
+
 footer div.footer_wrapper p.real_footer a {
+  font-family: Bozon;
   color: #403d39;
   font-size: 1.5rem;
 }
@@ -687,7 +718,7 @@ header.about_header div.where_are_you {
 }
 
 section.big_about {
-  height: 130vh;
+  height: 180vh;
   background-color: #252422;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,67 +771,47 @@ section.big_about div.big_about_wrapper div.p-wrapper {
       justify-content: space-around;
 }
 
-section.big_about div.big_about_wrapper div.p-wrapper p {
+section.big_about div.big_about_wrapper div.p-wrapper article.about_me p {
   font-size: 2rem;
   line-height: 2;
-  padding: 2rem;
+  padding: 3rem;
   width: 100%;
   color: #fffcf2;
 }
 
-section.big_about div.big_about_wrapper div.p-wrapper ul {
+section.big_about div.big_about_wrapper div.p-wrapper article.about_me ul {
   list-style: none;
   width: 80%;
 }
 
-section.big_about div.big_about_wrapper div.p-wrapper ul li {
+section.big_about div.big_about_wrapper div.p-wrapper article.about_me ul li {
   position: relative;
-  padding: 7px 0 7px 50px;
+  padding: 15px 0 15px 50px;
   display: block;
   font-size: 1.8rem;
   color: #fffcf2;
   text-align: left;
 }
 
-section.big_about div.big_about_wrapper div.p-wrapper ul li::before {
+section.big_about div.big_about_wrapper div.p-wrapper article.about_me ul li::before {
   content: "";
   position: absolute;
-  bottom: 2px;
+  bottom: 14px;
   left: auto;
-  height: 3px;
+  height: 1px;
   width: 0;
-  background-color: white;
+  background-color: #EB5E28;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
 
-section.big_about div.big_about_wrapper div.p-wrapper ul li:hover::before {
-  width: 40px;
-}
-
-section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(1) {
-  margin-left: 0;
-}
-
-section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(2) {
-  margin-left: 25px;
-}
-
-section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(3) {
-  margin-left: 50px;
-}
-
-section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(4) {
-  margin-left: 75px;
-}
-
-section.big_about div.big_about_wrapper div.p-wrapper ul li:nth-child(5) {
-  margin-left: 100px;
+section.big_about div.big_about_wrapper div.p-wrapper article.about_me ul li:hover::before {
+  width: 50px;
 }
 
 header.gallery_header {
   height: 40vh;
-  background-image: url(../img/fence-450670_1280.jpg);
+  background-image: url(../img/dark-2600169_1920.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -948,7 +959,7 @@ header.services_header {
   height: 40vh;
   background-image: url(../img/worker-5736096_1920.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 60%;
   background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 footer {
     width: 100%;
-    height: 40vh;
-    background-color: $forth-color;
+    height: 35vh;
+    background-color: $third-color;
 
     div.footer_wrapper {
 
@@ -9,31 +9,31 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        align-content: space-between;
+        align-content: center;
         flex-wrap: wrap;
 
         &>* {
-            width: 40%;
-            color: $third-color;
-            background-color: $fifth-color;
+            width: 35%;
+            color: $fifth-color;
+            // background-color: $fifth-color;
         }
 
         div {
             height: 80%;
             border-radius: 20px;
             text-align: center;
-            margin-top: 15px;
         }
 
         div.firm_data {
             padding: 5px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
+            line-height: 2;
+            align-items: flex-end;
 
             p {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             p.firm_name {
@@ -44,45 +44,70 @@ footer {
                 width: 200px;
                 height: 45px;
                 cursor: pointer;
-                border: 5px solid $fifth-color;
-                border-radius: 10px;
+                border: 2px solid $fifth-color;
+                border-radius: 5px;
+                background-color: $fifth-color;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: #57534e;
+                    border-color: #57534e;
+                }
 
                 a {
-                    font-family: Bozon-black;
+                    font-family: Bozon;
                     display: block;
                     text-align: center;
                     text-decoration: none;
-                    color: $fifth-color;
-
-
+                    color: $third-color;
                 }
             }
+        }
+
+        div.separator {
+            height: 80%;
+            width: 1px;
+            background-color: $fifth-color;
+            justify-self: center;
         }
 
         div.contact_data {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
 
             p {
                 font-family: Bozon bold;
-                font-size: 2rem;
-                margin: 10px;
-
+                font-size: 1.8rem;
+                line-height: 2;
+                align-items: left;
             }
         }
 
         p.real_footer {
+            position: relative;
             width: 100%;
-            padding: 4px 0;
+            padding: 10px;
             text-align: center;
             font-family: Bozon;
-            font-size: 1.5rem;
             color: $fifth-color;
+            font-size: 1.5rem;
             background-color: rgba(0, 0, 0, 0);
 
+            &::before {
+                content: '';
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 1px;
+                background-color: $fifth-color;
+
+            }
+
             a {
+                font-family: Bozon;
                 color: $fifth-color;
                 font-size: 1.5rem;
             }
