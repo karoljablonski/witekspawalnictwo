@@ -1,5 +1,6 @@
 :root {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -93,10 +94,15 @@ nav.main_nav div.main_nav_wrapper div.logo {
   margin: 20px;
 }
 
-nav.main_nav div.main_nav_wrapper div.logo span {
+nav.main_nav div.main_nav_wrapper div.logo a {
+  text-decoration: none;
+}
+
+nav.main_nav div.main_nav_wrapper div.logo a span {
   font-size: 50px;
   color: #252422;
   font-family: 'Yeseva One', cursive;
+  text-decoration: none;
 }
 
 nav.main_nav div.main_nav_wrapper ul {
@@ -746,6 +752,7 @@ section.big_about div.big_about_wrapper div.big_about_img {
   width: 45%;
   height: 90%;
   background: url(../img/welding-2819144_1920.jpg);
+  background-size: cover;
   background-position: 40% 20%;
   -webkit-box-shadow: 0 0 10px 20px #252422;
           box-shadow: 0 0 10px 20px #252422;
