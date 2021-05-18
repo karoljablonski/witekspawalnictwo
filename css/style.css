@@ -67,11 +67,6 @@ section.information div.information_wrapper span {
   color: white;
 }
 
-section.information div.information_wrapper span span {
-  color: white;
-  font-size: 15px;
-}
-
 nav.main_nav {
   width: 100%;
   background-color: #fff;
@@ -963,6 +958,14 @@ section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper di
 }
 
 header.services_header {
+  height: 40vh;
+  background-image: url(../img/worker-5736096_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 60%;
+  background-size: cover;
+}
+
+header.contact_header {
   height: 40vh;
   background-image: url(../img/worker-5736096_1920.jpg);
   background-repeat: no-repeat;
