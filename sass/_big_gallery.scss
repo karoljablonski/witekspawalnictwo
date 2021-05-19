@@ -18,52 +18,66 @@ header.gallery_header {
 }
 
 section.big_gallery {
+    background-color: $forth-color;
 
     div.big_gallery_wrapper {
         @include desktop-breakpoint-wrapper;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        // background-color: green;
-        min-height: 200vh;
+        // background-color: #b44e20;
+        min-height: 100vh;
 
         nav.gallery_navigation {
             // position: sticky;
             // top: 100px;
             // left: 0;
-            margin-top: 70px;
+            margin-top: 7em;
             width: 100%;
             height: 100px;
+
             // flex-basis: 170px;
-            // background-color: azure;
+            // background-color: black;
+            p {
+                width: 100%;
+            }
 
             ul {
                 list-style-type: none;
-                width: 80%;
+                width: 60%;
                 height: 100%;
                 margin: 0 auto;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+
                 // background-color: yellow;
 
                 li {
                     width: 30%;
                     height: 80%;
                     text-align: center;
+                    // background-color: violet;
 
                     label {
-                        display: block;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         text-align: center;
                         width: 100%;
                         height: 100%;
-                        text-align: center;
-                        // background-color: violet;
-                        border: 3px solid $element-color;
-                        font-family: Bozon;
-                        font-size: 3rem;
-                        color: $logo-color;
+                        background-color: $element-color;
+                        border: 1px solid white;
+                        border-radius: 5px;
+                        font-family: Bozon book;
+                        font-size: 2rem;
+                        color: white;
                         cursor: pointer;
+                        // transition: 300ms;
+
+                        &:hover {
+                            background-color: #b44e20;
+                        }
                     }
                 }
             }
@@ -90,9 +104,9 @@ section.big_gallery {
 
                 div {
                     position: relative;
-                    margin: 20px 0;
-                    width: 30%;
-                    height: 300px;
+                    margin: 30px 0;
+                    width: 28%;
+                    height: 200px;
                     overflow: hidden;
                     border-radius: 15px;
 
