@@ -82,3 +82,65 @@ section.little_about {
         }
     }
 }
+
+@media (max-width: $tablet-breakpoint) {
+    section.little_about {
+        div.little_about_wrapper {
+            &>* {
+                width: 45%;
+                height: 60%;
+            }
+
+            header.section_content {
+                p {
+                    font-family: Bozon book;
+                    line-height: 2.5;
+                    font-size: 65px;
+                    color: $logo-color;
+                }
+            }
+        }
+
+        div.little_about_experience {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                font-size: 400px;
+
+                span {
+                    font-family: Bozon bold;
+                    text-align: center;
+                    font-size: 38px;
+                    text-align: center;
+                    color: $forth-color;
+                }
+            }
+        }
+
+        button.browse_about {
+            margin-top: 50px;
+            width: 320px;
+            height: 60px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: $element-color;
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+                background-color: #b44e20;
+            }
+
+            a {
+                font-family: Bozon book;
+                display: block;
+                text-decoration: none;
+                font-size: 2.5rem;
+                color: white;
+            }
+        }
+    }
+}

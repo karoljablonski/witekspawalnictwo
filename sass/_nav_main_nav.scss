@@ -58,3 +58,25 @@ nav.main_nav {
         }
     }
 }
+
+@media(max-width: $tablet-breakpoint) {
+    nav.main_nav {
+        div.main_nav_wrapper {
+            div.logo {
+                a {
+                    span {
+                        font-size: 45px;
+                    }
+                }
+            }
+
+            ul {
+                width: 60%;
+
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

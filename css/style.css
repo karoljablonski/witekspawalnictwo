@@ -67,6 +67,18 @@ section.information div.information_wrapper span {
   color: white;
 }
 
+@media (max-width: 1100px) {
+  section.information div.information_wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.information div.information_wrapper span {
+    margin: 0 10px;
+    font-size: 1.1rem;
+  }
+}
+
 nav.main_nav {
   width: 100%;
   background-color: #fff;
@@ -129,6 +141,18 @@ nav.main_nav div.main_nav_wrapper ul li a {
 
 nav.main_nav div.main_nav_wrapper ul li a:hover, nav.main_nav div.main_nav_wrapper ul li a:active {
   color: #EB5E28;
+}
+
+@media (max-width: 1100px) {
+  nav.main_nav div.main_nav_wrapper div.logo a span {
+    font-size: 45px;
+  }
+  nav.main_nav div.main_nav_wrapper ul {
+    width: 60%;
+  }
+  nav.main_nav div.main_nav_wrapper ul a {
+    font-size: 16px;
+  }
 }
 
 header.main_header {
@@ -318,6 +342,63 @@ section.little_about button.browse_about a {
   text-decoration: none;
   font-size: 2.5rem;
   color: white;
+}
+
+@media (max-width: 1100px) {
+  section.little_about div.little_about_wrapper > * {
+    width: 45%;
+    height: 60%;
+  }
+  section.little_about div.little_about_wrapper header.section_content p {
+    font-family: Bozon book;
+    line-height: 2.5;
+    font-size: 65px;
+    color: #252422;
+  }
+  section.little_about div.little_about_experience {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.little_about div.little_about_experience span {
+    font-size: 400px;
+  }
+  section.little_about div.little_about_experience span span {
+    font-family: Bozon bold;
+    text-align: center;
+    font-size: 38px;
+    text-align: center;
+    color: #fffcf2;
+  }
+  section.little_about button.browse_about {
+    margin-top: 50px;
+    width: 320px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #EB5E28;
+    cursor: pointer;
+  }
+  section.little_about button.browse_about:hover, section.little_about button.browse_about:active {
+    background-color: #b44e20;
+  }
+  section.little_about button.browse_about a {
+    font-family: Bozon book;
+    display: block;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+  }
 }
 
 section.little_gallery {
