@@ -10,6 +10,7 @@ section.little_services {
         align-items: center;
         flex-wrap: wrap;
         flex-direction: row-reverse;
+        overflow-x: hidden;
 
         &>* {
             width: 40%;
@@ -20,9 +21,14 @@ section.little_services {
             p {
                 padding-left: 20px;
                 font-family: Bozon book;
-                line-height: 2;
+                line-height: 2.3;
                 font-size: 80px;
                 color: $logo-color;
+                // overflow-x: hidden;
+            }
+
+            p.wide_word {
+                width: 150%;
             }
         }
 
@@ -44,7 +50,7 @@ section.little_services {
                 display: block;
                 text-align: center;
                 font-size: 100px;
-                line-height: .9;
+                line-height: 1;
                 letter-spacing: 5px;
                 color: transparent;
 
@@ -78,6 +84,66 @@ section.little_services {
                 color: white;
             }
 
+        }
+    }
+}
+
+@media (max-width: $tablet-breakpoint) {
+    section.little_services {
+        min-height: 75vh;
+
+        div.little_services_wrapper {
+            header.services_content {
+                p {
+                    font-size: 65px;
+                }
+            }
+
+            div.little_services_experience {
+                span {
+                    font-size: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $small_tablet-breakpoint) {
+    section.little_services {
+        min-height: 70vh;
+
+        div.little_services_wrapper {
+            header.services_content {
+                p {
+                    font-size: 55px;
+                }
+            }
+
+            div.little_services_experience {
+                span {
+                    font-size: 70px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $smartphone-breakpoint) {
+    section.little_services {
+        min-height: 60vh;
+
+        div.little_services_wrapper {
+            header.services_content {
+                p {
+                    font-size: 45px;
+                }
+            }
+
+            div.little_services_experience {
+                span {
+                    font-size: 55px;
+                }
+            }
         }
     }
 }

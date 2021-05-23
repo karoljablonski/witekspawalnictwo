@@ -25,7 +25,7 @@ header.main_header {
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                filter: brightness(60%);
+                filter: brightness(80%);
             }
         }
 
@@ -81,6 +81,46 @@ header.main_header {
                     text-decoration: none;
                     font-size: 2.5rem;
                     color: white;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $small_tablet-breakpoint) {
+    header.main_header {
+        div.main_header_wrapper {
+            h1.name_last_work {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: $smartphone-breakpoint) {
+    header.main_header {
+        height: 75vh;
+
+        div.main_header_wrapper {
+            div.border {
+                position: absolute;
+                top: 10%;
+                right: 3%;
+                height: 80%;
+                width: 50%;
+                border: 2px solid rgba(255, 255, 255, 0.4);
+
+                div.img-holder {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    height: 100%;
+                    width: 100%;
+                    background-image: url(../gallery/podjazd1-1.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    filter: brightness(60%);
                 }
             }
         }

@@ -85,61 +85,76 @@ section.little_about {
 
 @media (max-width: $tablet-breakpoint) {
     section.little_about {
-        div.little_about_wrapper {
-            &>* {
-                width: 45%;
-                height: 60%;
-            }
+        min-height: 75vh;
+        padding-bottom: 10%;
 
+        div.little_about_wrapper {
             header.section_content {
                 p {
-                    font-family: Bozon book;
                     line-height: 2.5;
                     font-size: 65px;
-                    color: $logo-color;
                 }
             }
         }
 
         div.little_about_experience {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
 
             span {
                 font-size: 400px;
 
                 span {
-                    font-family: Bozon bold;
-                    text-align: center;
                     font-size: 38px;
-                    text-align: center;
-                    color: $forth-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $small_tablet-breakpoint) {
+    section.little_about {
+        min-height: 70vh;
+
+        div.little_about_wrapper {
+            header.section_content {
+                p {
+                    font-size: 55px;
                 }
             }
         }
 
-        button.browse_about {
-            margin-top: 50px;
-            width: 320px;
-            height: 60px;
-            border: 1px solid white;
-            border-radius: 5px;
-            background-color: $element-color;
-            cursor: pointer;
+        div.little_about_experience {
 
-            &:hover,
-            &:active {
-                background-color: #b44e20;
+            span {
+                font-size: 300px;
+
+                span {
+                    font-size: 35px;
+                }
             }
+        }
+    }
+}
 
-            a {
-                font-family: Bozon book;
-                display: block;
-                text-decoration: none;
-                font-size: 2.5rem;
-                color: white;
+@media (max-width: $smartphone-breakpoint) {
+    section.little_about {
+        min-height: 60vh;
+
+        div.little_about_wrapper {
+            header.section_content {
+                p {
+                    font-size: 45px;
+                }
+            }
+        }
+
+        div.little_about_experience {
+
+            span {
+                font-size: 220px;
+
+                span {
+                    font-size: 30px;
+                }
             }
         }
     }
