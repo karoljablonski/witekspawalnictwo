@@ -100,6 +100,7 @@ header.main_header {
 @media (max-width: $smartphone-breakpoint) {
     header.main_header {
         height: 75vh;
+        padding-bottom: 7%;
 
         div.main_header_wrapper {
             div.border {
@@ -122,6 +123,10 @@ header.main_header {
                     background-repeat: no-repeat;
                     filter: brightness(60%);
                 }
+            }
+
+            div.button_holder {
+                bottom: 0%;
             }
         }
     }

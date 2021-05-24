@@ -257,6 +257,7 @@ header.main_header div.main_header_wrapper div.button_holder button.browse_galle
 @media (max-width: 768px) {
   header.main_header {
     height: 75vh;
+    padding-bottom: 7%;
   }
   header.main_header div.main_header_wrapper div.border {
     position: absolute;
@@ -278,6 +279,9 @@ header.main_header div.main_header_wrapper div.button_holder button.browse_galle
     background-repeat: no-repeat;
     -webkit-filter: brightness(60%);
             filter: brightness(60%);
+  }
+  header.main_header div.main_header_wrapper div.button_holder {
+    bottom: 0%;
   }
 }
 
@@ -604,7 +608,9 @@ section.little_gallery div.little_gallery_img_wrapper button.little_gallery_butt
 
 @media (max-width: 768px) {
   section.little_gallery {
-    max-height: 80vh;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    min-height: 80vh;
   }
   section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img {
     width: 29%;
@@ -761,7 +767,8 @@ section.little_services div.little_services_wrapper button.browse_about a {
 
 @media (max-width: 768px) {
   section.little_services {
-    min-height: 60vh;
+    min-height: 70vh;
+    padding-bottom: 10%;
   }
   section.little_services div.little_services_wrapper header.services_content p {
     font-size: 45px;

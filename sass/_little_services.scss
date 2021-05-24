@@ -130,7 +130,8 @@ section.little_services {
 
 @media (max-width: $smartphone-breakpoint) {
     section.little_services {
-        min-height: 60vh;
+        min-height: 70vh;
+        padding-bottom: 10%;
 
         div.little_services_wrapper {
             header.services_content {

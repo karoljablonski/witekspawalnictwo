@@ -179,7 +179,8 @@ section.little_gallery {
 
 @media (max-width: $smartphone-breakpoint) {
     section.little_gallery {
-        max-height: 80vh;
+        box-sizing: content-box;
+        min-height: 80vh;
 
         div.little_gallery_img_wrapper {
 
