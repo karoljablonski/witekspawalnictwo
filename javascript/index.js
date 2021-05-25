@@ -12,15 +12,23 @@ window.addEventListener("scroll", function(){
     };
 });
 
+//hamburger: pojawianie się na zmianę wielkości okna; klik na burger powoduje odpalenie nav;
+const burger = document.querySelector('button.hamburger');
+const navigation = document.querySelector('ul');
+const smartphone590width = 590;
 
+window.addEventListener("resize", function(){
+    if(window.innerWidth <= smartphone590width){
+    navigation.classList.add("unshow_ul");
+    burger.classList.add("show_button");
+} else {
+    navigation.classList.remove("unshow_ul");
+    burger.classList.remove("show_button")
+};
+});
 
-
-//tutaj cos pokombinowac, czy burger swoj czy z tej durnej biblioteki XD
-
-//js for hamburger start
-// const burger = document.querySelector('button.hamburger');
-// burger.addEventListener("click", function(){
-//     burger.classList.toggle("is-active");
+burger.addEventListener("click", function(){
+    burger.classList.toggle("is-active");
+    navigation.classList.toggle("unshow_ul");
+});
 //js for hamburger end
-
-// });

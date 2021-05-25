@@ -25,12 +25,30 @@ nav.main_nav {
             }
         }
 
+        button.hamburger {
+            display: none;
+
+            &.show_button {
+                display: block;
+            }
+        }
+
         ul {
+            // width: 70%; original
             width: 70%;
             list-style: none;
             display: flex;
+            // display: none;
             justify-content: space-around;
             align-items: center;
+            transition: 0.5s;
+
+            &.unshow_ul {
+                //sprawdzenie dzialania buttona burger;
+                display: none;
+                //transition nie dziala na display none;
+                transition: 0.5s;
+            }
 
             li {
                 &:nth-child(1) {
@@ -58,6 +76,8 @@ nav.main_nav {
         }
     }
 }
+
+
 
 @media(max-width: $tablet-breakpoint) {
     nav.main_nav {
