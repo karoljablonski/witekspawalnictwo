@@ -17,18 +17,20 @@ const burger = document.querySelector('button.hamburger');
 const navigation = document.querySelector('ul');
 const smartphone590width = 590;
 
+
 window.addEventListener("resize", function(){
     if(window.innerWidth <= smartphone590width){
+        burger.addEventListener("click", function(){
+            burger.classList.toggle("is-active");
+            navigation.classList.toggle("unshow_ul");
+        });
     navigation.classList.add("unshow_ul");
     burger.classList.add("show_button");
 } else {
     navigation.classList.remove("unshow_ul");
-    burger.classList.remove("show_button")
+    burger.classList.remove("show_button");
+    burger.classList.remove("is-active");
 };
 });
 
-burger.addEventListener("click", function(){
-    burger.classList.toggle("is-active");
-    navigation.classList.toggle("unshow_ul");
-});
 //js for hamburger end
