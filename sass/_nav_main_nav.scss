@@ -43,13 +43,6 @@ nav.main_nav {
             align-items: center;
             transition: 0.5s;
 
-            &.unshow_ul {
-                //sprawdzenie dzialania buttona burger;
-                display: none;
-                //transition nie dziala na display none;
-                transition: 0.5s;
-            }
-
             li {
                 &:nth-child(1) {
                     a {
@@ -71,30 +64,6 @@ nav.main_nav {
                     }
 
 
-                }
-            }
-        }
-    }
-}
-
-
-
-@media(max-width: $tablet-breakpoint) {
-    nav.main_nav {
-        div.main_nav_wrapper {
-            div.logo {
-                a {
-                    span {
-                        font-size: 45px;
-                    }
-                }
-            }
-
-            ul {
-                width: 60%;
-
-                a {
-                    font-size: 16px;
                 }
             }
         }

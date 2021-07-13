@@ -16,16 +16,3 @@ section.information {
         }
     }
 }
-
-@media (max-width: $tablet-breakpoint) {
-    section.information {
-        div.information_wrapper {
-            justify-content: center;
-
-            span {
-                margin: 0 10px;
-                font-size: 1.3rem;
-            }
-        }
-    }
-}

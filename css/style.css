@@ -67,18 +67,6 @@ section.information div.information_wrapper span {
   color: white;
 }
 
-@media (max-width: 1100px) {
-  section.information div.information_wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section.information div.information_wrapper span {
-    margin: 0 10px;
-    font-size: 1.3rem;
-  }
-}
-
 nav.main_nav {
   width: 100%;
   background-color: #fff;
@@ -135,12 +123,6 @@ nav.main_nav div.main_nav_wrapper ul {
   transition: 0.5s;
 }
 
-nav.main_nav div.main_nav_wrapper ul.unshow_ul {
-  display: none;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 nav.main_nav div.main_nav_wrapper ul li:nth-child(1) a {
   color: #EB5E28;
 }
@@ -157,18 +139,6 @@ nav.main_nav div.main_nav_wrapper ul li a {
 
 nav.main_nav div.main_nav_wrapper ul li a:hover, nav.main_nav div.main_nav_wrapper ul li a:active {
   color: #EB5E28;
-}
-
-@media (max-width: 1100px) {
-  nav.main_nav div.main_nav_wrapper div.logo a span {
-    font-size: 45px;
-  }
-  nav.main_nav div.main_nav_wrapper ul {
-    width: 60%;
-  }
-  nav.main_nav div.main_nav_wrapper ul a {
-    font-size: 16px;
-  }
 }
 
 header.main_header {
@@ -262,43 +232,6 @@ header.main_header div.main_header_wrapper div.button_holder button.browse_galle
   text-decoration: none;
   font-size: 2.5rem;
   color: white;
-}
-
-@media (max-width: 900px) {
-  header.main_header div.main_header_wrapper h1.name_last_work {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  header.main_header {
-    height: 75vh;
-    padding-bottom: 7%;
-  }
-  header.main_header div.main_header_wrapper div.border {
-    position: absolute;
-    top: 10%;
-    right: 3%;
-    height: 80%;
-    width: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-  }
-  header.main_header div.main_header_wrapper div.border div.img-holder {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    height: 100%;
-    width: 100%;
-    background-image: url(../gallery/podjazd1-1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-filter: brightness(60%);
-            filter: brightness(60%);
-  }
-  header.main_header div.main_header_wrapper div.button_holder {
-    bottom: 0%;
-  }
 }
 
 section.little_about {
@@ -395,53 +328,6 @@ section.little_about button.browse_about a {
   text-decoration: none;
   font-size: 2.5rem;
   color: white;
-}
-
-@media (max-width: 1100px) {
-  section.little_about {
-    min-height: 75vh;
-    padding-bottom: 10%;
-  }
-  section.little_about div.little_about_wrapper header.section_content p {
-    line-height: 2.5;
-    font-size: 65px;
-  }
-  section.little_about div.little_about_experience span {
-    font-size: 400px;
-  }
-  section.little_about div.little_about_experience span span {
-    font-size: 38px;
-  }
-}
-
-@media (max-width: 900px) {
-  section.little_about {
-    min-height: 70vh;
-  }
-  section.little_about div.little_about_wrapper header.section_content p {
-    font-size: 55px;
-  }
-  section.little_about div.little_about_experience span {
-    font-size: 300px;
-  }
-  section.little_about div.little_about_experience span span {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 768px) {
-  section.little_about {
-    min-height: 60vh;
-  }
-  section.little_about div.little_about_wrapper header.section_content p {
-    font-size: 45px;
-  }
-  section.little_about div.little_about_experience span {
-    font-size: 220px;
-  }
-  section.little_about div.little_about_experience span span {
-    font-size: 30px;
-  }
 }
 
 section.little_gallery {
@@ -580,80 +466,6 @@ section.little_gallery div.little_gallery_img_wrapper button.little_gallery_butt
   }
 }
 
-@media (max-width: 1100px) {
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(2) img {
-    width: 280%;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(2) img:hover {
-    width: 310%;
-  }
-  section.little_gallery div.little_gallery_img_wrapper button.little_gallery_button {
-    bottom: 24vh;
-    width: 220px;
-  }
-  section.little_gallery div.little_gallery_img_wrapper button.little_gallery_button:hover, section.little_gallery div.little_gallery_img_wrapper button.little_gallery_button:active {
-    background-color: #b44e20;
-  }
-}
-
-@media (max-width: 900px) {
-  section.little_gallery {
-    height: 90vh;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img {
-    width: 29%;
-    height: 40vh;
-    border-radius: 30px;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(1), section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(3) {
-    height: 60vh;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img img {
-    width: 200%;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img img:hover {
-    width: 230%;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(2) img {
-    width: 180%;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(2) img:hover {
-    width: 210%;
-  }
-}
-
-@media (max-width: 768px) {
-  section.little_gallery {
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    min-height: 80vh;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img {
-    width: 29%;
-    height: 40vh;
-    border-radius: 30px;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(1), section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(3) {
-    height: 60vh;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img img {
-    width: 200%;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img img:hover {
-    width: 230%;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(2) img {
-    width: 250%;
-  }
-  section.little_gallery div.little_gallery_img_wrapper div.little_gallery_img:nth-child(2) img:hover {
-    width: 280%;
-  }
-  section.little_gallery div.little_gallery_img_wrapper button.little_gallery_button {
-    bottom: 15vh;
-    width: 220px;
-  }
-}
-
 section.little_services {
   width: 100%;
   min-height: 90vh;
@@ -755,43 +567,6 @@ section.little_services div.little_services_wrapper button.browse_about a {
   text-decoration: none;
   font-size: 2.5rem;
   color: white;
-}
-
-@media (max-width: 1100px) {
-  section.little_services {
-    min-height: 75vh;
-  }
-  section.little_services div.little_services_wrapper header.services_content p {
-    font-size: 65px;
-  }
-  section.little_services div.little_services_wrapper div.little_services_experience span {
-    font-size: 80px;
-  }
-}
-
-@media (max-width: 900px) {
-  section.little_services {
-    min-height: 70vh;
-  }
-  section.little_services div.little_services_wrapper header.services_content p {
-    font-size: 55px;
-  }
-  section.little_services div.little_services_wrapper div.little_services_experience span {
-    font-size: 70px;
-  }
-}
-
-@media (max-width: 768px) {
-  section.little_services {
-    min-height: 70vh;
-    padding-bottom: 10%;
-  }
-  section.little_services div.little_services_wrapper header.services_content p {
-    font-size: 45px;
-  }
-  section.little_services div.little_services_wrapper div.little_services_experience span {
-    font-size: 55px;
-  }
 }
 
 footer {
