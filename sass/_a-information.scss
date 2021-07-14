@@ -11,7 +11,8 @@ section.information {
 
         span {
             line-height: 30px;
-            font-size: 15px;
+            // font-size: 15px;
+            font-size: clamp(12px, 1.05vw, 20px);
             color: white;
         }
     }

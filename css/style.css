@@ -63,7 +63,7 @@ section.information div.information_wrapper {
 
 section.information div.information_wrapper span {
   line-height: 30px;
-  font-size: 15px;
+  font-size: clamp(12px, 1.05vw, 20px);
   color: white;
 }
 
@@ -86,7 +86,7 @@ nav.main_nav div.main_nav_wrapper {
 }
 
 nav.main_nav div.main_nav_wrapper div.logo {
-  margin: 20px;
+  margin: clamp(10px, 1.1vw, 25px);
 }
 
 nav.main_nav div.main_nav_wrapper div.logo a {
@@ -94,7 +94,7 @@ nav.main_nav div.main_nav_wrapper div.logo a {
 }
 
 nav.main_nav div.main_nav_wrapper div.logo a span {
-  font-size: 50px;
+  font-size: clamp(30px, 4.5vw, 50px);
   color: #252422;
   font-family: 'Yeseva One', cursive;
   text-decoration: none;
@@ -123,15 +123,21 @@ nav.main_nav div.main_nav_wrapper ul {
   transition: 0.5s;
 }
 
+nav.main_nav div.main_nav_wrapper ul li {
+  width: 25%;
+}
+
 nav.main_nav div.main_nav_wrapper ul li:nth-child(1) a {
   color: #EB5E28;
+  text-align: center;
 }
 
 nav.main_nav div.main_nav_wrapper ul li a {
   position: relative;
   padding: 10px;
-  font-size: 18px;
+  font-size: clamp(13px, 2vw, 18px);
   text-decoration: none;
+  text-align: center;
   color: #252422;
   -webkit-transition: .2s;
   transition: .2s;
@@ -264,7 +270,7 @@ section.little_about div.little_about_wrapper > * {
 section.little_about div.little_about_wrapper header.section_content p {
   font-family: Bozon book;
   line-height: 2;
-  font-size: 80px;
+  font-size: clamp(50px, 7vw, 80px);
   color: #252422;
 }
 
@@ -295,6 +301,7 @@ section.little_about div.little_about_experience span {
   display: block;
   text-align: center;
   font-size: 450px;
+  font-size: clamp(200px, 40vw, 450px);
   line-height: .9;
   letter-spacing: 5px;
   color: transparent;
@@ -310,7 +317,8 @@ section.little_about div.little_about_experience span span {
 
 section.little_about button.browse_about {
   margin-top: 50px;
-  width: 320px;
+  margin-bottom: 50px;
+  width: clamp(150px, 40vw, 320px);
   height: 60px;
   border: 1px solid white;
   border-radius: 5px;
@@ -326,8 +334,35 @@ section.little_about button.browse_about a {
   font-family: Bozon book;
   display: block;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: clamp(16px, 3vw, 26px);
   color: white;
+}
+
+@media (max-width: 768px) {
+  section.little_about {
+    width: 100%;
+    min-height: 90vh;
+    background-color: #fffcf2;
+  }
+  section.little_about div.little_about_wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 section.little_gallery {

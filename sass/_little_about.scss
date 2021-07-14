@@ -1,6 +1,7 @@
 section.little_about {
     width: 100%;
     min-height: 90vh;
+    // padding-bottom: clamp(50px, 5vh, 10vh);
     background-color: $forth-color;
 
     div.little_about_wrapper {
@@ -11,7 +12,7 @@ section.little_about {
         flex-wrap: wrap;
 
         &>* {
-            width: 40%;
+            width: 40%; //dla mediaqueries malych wyswietlaczy zmieniac, zeby <p> bylo na srodku
             height: 80%;
         }
 
@@ -20,7 +21,8 @@ section.little_about {
             p {
                 font-family: Bozon book;
                 line-height: 2;
-                font-size: 80px;
+                // font-size: 80px;
+                font-size: clamp(50px, 7vw, 80px);
                 color: $logo-color;
             }
         }
@@ -43,6 +45,7 @@ section.little_about {
             display: block;
             text-align: center;
             font-size: 450px;
+            font-size: clamp(200px, 40vw, 450px);
             line-height: .9;
             letter-spacing: 5px;
             color: transparent;
@@ -61,7 +64,9 @@ section.little_about {
 
     button.browse_about {
         margin-top: 50px;
-        width: 320px;
+        margin-bottom: 50px;
+        // width: 320px;
+        width: clamp(150px, 40vw, 320px);
         height: 60px;
         border: 1px solid white;
         border-radius: 5px;
@@ -77,8 +82,26 @@ section.little_about {
             font-family: Bozon book;
             display: block;
             text-decoration: none;
-            font-size: 2.5rem;
+            font-size: clamp(16px, 3vw, 26px);
+            // font-size: 20px;
             color: white;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    section.little_about {
+        width: 100%;
+        min-height: 90vh;
+        background-color: $forth-color;
+
+        div.little_about_wrapper {
+            @include desktop-breakpoint-wrapper;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
         }
     }
 }

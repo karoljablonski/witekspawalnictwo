@@ -11,13 +11,15 @@ nav.main_nav {
         justify-content: space-between;
 
         div.logo {
-            margin: 20px;
+            // margin: 20px;
+            margin: clamp(10px, 1.1vw, 25px);
 
             a {
                 text-decoration: none;
 
                 span {
-                    font-size: 50px;
+                    // font-size: 50px;
+                    font-size: clamp(30px, 4.5vw, 50px);
                     color: $logo-color;
                     font-family: 'Yeseva One', cursive;
                     text-decoration: none;
@@ -34,27 +36,32 @@ nav.main_nav {
         }
 
         ul {
-            // width: 70%; original
             width: 70%;
             list-style: none;
             display: flex;
-            // display: none;
             justify-content: space-around;
             align-items: center;
             transition: 0.5s;
 
             li {
+                width: 25%;
+
+
                 &:nth-child(1) {
                     a {
                         color: $element-color;
+                        text-align: center;
+                        //padding: 3px; //dodac w mediaqueries dla malych wyswietlaczy to sie bedzie rowno wyswietlac
                     }
                 }
 
                 a {
                     position: relative;
                     padding: 10px;
-                    font-size: 18px;
+                    // font-size: 18px;
+                    font-size: clamp(13px, 2vw, 18px);
                     text-decoration: none;
+                    text-align: center;
                     color: $nav-links-color;
                     transition: .2s;
 
@@ -62,8 +69,6 @@ nav.main_nav {
                     &:active {
                         color: $element-color;
                     }
-
-
                 }
             }
         }
