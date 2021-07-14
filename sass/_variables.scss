@@ -56,3 +56,13 @@ $fifth-color: #403d39;
     margin: 0 auto;
     height: 100%;
 }
+
+$button-width: clamp(150px, 40vw, 320px);
+$button-fz: clamp(16px, 3vw, 26px);
+
+@mixin little_header_p {
+    font-family: Bozon book;
+    line-height: 2.3;
+    font-size: clamp(50px, 7vw, 80px);
+    color: $logo-color;
+}

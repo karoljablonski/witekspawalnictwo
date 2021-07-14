@@ -13,18 +13,18 @@ section.little_services {
         overflow-x: hidden;
 
         &>* {
-            width: 40%;
+            width: 40%; //dla mediaqueries malych wyswietlaczy zmieniac, zeby <p> bylo na srodku, podobnie jak w little_about
             height: 80%;
         }
 
         header.services_content {
             p {
-                padding-left: 20px;
-                font-family: Bozon book;
-                line-height: 2.3;
-                font-size: 80px;
-                color: $logo-color;
-                // overflow-x: hidden;
+                // padding-left: 20px;
+                // font-family: Bozon book;
+                // line-height: 2.3;
+                // font-size: 80px;
+                // color: $logo-color;
+                @include little_header_p;
             }
 
             p.wide_word {
@@ -49,7 +49,7 @@ section.little_services {
                 font-family: Bozon-black;
                 display: block;
                 text-align: center;
-                font-size: 100px;
+                font-size: clamp(55px, 8vw, 100px);
                 line-height: 1;
                 letter-spacing: 5px;
                 color: transparent;
@@ -64,7 +64,8 @@ section.little_services {
 
         button.browse_about {
             margin-top: 50px;
-            width: 320px;
+            margin-bottom: 50px;
+            width: $button-width;
             height: 60px;
             border: 1px solid white;
             border-radius: 5px;
@@ -80,10 +81,20 @@ section.little_services {
                 font-family: Bozon book;
                 display: block;
                 text-decoration: none;
-                font-size: 2.5rem;
+                // font-size: 2.5rem;
+                font-size: $button-fz;
                 color: white;
             }
 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    section.little_services {
+
+        div.little_services_wrapper {
+            flex-direction: column;
         }
     }
 }

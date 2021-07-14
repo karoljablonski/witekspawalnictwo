@@ -26,6 +26,7 @@ header.main_header {
                 background-position: center;
                 background-repeat: no-repeat;
                 filter: brightness(80%);
+                // foremka na zdjecie do ogarniecia w mediaqieries dla malych wyswietlaczy!
             }
         }
 
@@ -37,7 +38,8 @@ header.main_header {
             width: 20%;
             transform: translateY(-50%);
             color: white;
-            font-size: 60px;
+            // font-size: 60px;
+            font-size: clamp(40px, 5vw, 60px);
             line-height: 1.8;
             text-shadow: 3px 3px 5px #222;
         }
@@ -50,7 +52,8 @@ header.main_header {
             width: 30%;
             transform: translateY(-50%);
             color: rgba(255, 255, 255, 0.5);
-            font-size: 20px;
+            // font-size: 20px;
+            font-size: clamp(14px, 2vw, 20px);
             text-align: center;
             letter-spacing: 2px;
         }
@@ -63,7 +66,8 @@ header.main_header {
             text-align: center;
 
             button.browse_gallery {
-                width: 220px;
+                // width: 220px;
+                width: $button-width;
                 height: 60px;
                 border: 1px solid white;
                 border-radius: 5px;
@@ -79,7 +83,8 @@ header.main_header {
                     font-family: Bozon book;
                     display: block;
                     text-decoration: none;
-                    font-size: 2.5rem;
+                    // font-size: 2.5rem;
+                    font-size: $button-fz;
                     color: white;
                 }
             }

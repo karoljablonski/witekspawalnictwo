@@ -192,7 +192,7 @@ header.main_header div.main_header_wrapper h1.name_last_work {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: white;
-  font-size: 60px;
+  font-size: clamp(40px, 5vw, 60px);
   line-height: 1.8;
   text-shadow: 3px 3px 5px #222;
 }
@@ -206,7 +206,7 @@ header.main_header div.main_header_wrapper h2.date_last_work {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: rgba(255, 255, 255, 0.5);
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   text-align: center;
   letter-spacing: 2px;
 }
@@ -220,7 +220,7 @@ header.main_header div.main_header_wrapper div.button_holder {
 }
 
 header.main_header div.main_header_wrapper div.button_holder button.browse_gallery {
-  width: 220px;
+  width: clamp(150px, 40vw, 320px);
   height: 60px;
   border: 1px solid white;
   border-radius: 5px;
@@ -236,7 +236,7 @@ header.main_header div.main_header_wrapper div.button_holder button.browse_galle
   font-family: Bozon book;
   display: block;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: clamp(16px, 3vw, 26px);
   color: white;
 }
 
@@ -269,7 +269,7 @@ section.little_about div.little_about_wrapper > * {
 
 section.little_about div.little_about_wrapper header.section_content p {
   font-family: Bozon book;
-  line-height: 2;
+  line-height: 2.3;
   font-size: clamp(50px, 7vw, 80px);
   color: #252422;
 }
@@ -300,7 +300,6 @@ section.little_about div.little_about_experience span {
   font-family: Bozon-black;
   display: block;
   text-align: center;
-  font-size: 450px;
   font-size: clamp(200px, 40vw, 450px);
   line-height: .9;
   letter-spacing: 5px;
@@ -339,29 +338,11 @@ section.little_about button.browse_about a {
 }
 
 @media (max-width: 768px) {
-  section.little_about {
-    width: 100%;
-    min-height: 90vh;
-    background-color: #fffcf2;
-  }
   section.little_about div.little_about_wrapper {
-    max-width: 1300px;
-    margin: 0 auto;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
@@ -435,7 +416,7 @@ section.little_gallery div.little_gallery_img_wrapper button.little_gallery_butt
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 320px;
+  width: clamp(150px, 40vw, 320px);
   height: 60px;
   border: 1px solid white;
   border-radius: 5px;
@@ -451,7 +432,7 @@ section.little_gallery div.little_gallery_img_wrapper button.little_gallery_butt
   font-family: Bozon book;
   display: block;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: clamp(16px, 3vw, 26px);
   color: white;
 }
 
@@ -534,10 +515,9 @@ section.little_services div.little_services_wrapper > * {
 }
 
 section.little_services div.little_services_wrapper header.services_content p {
-  padding-left: 20px;
   font-family: Bozon book;
   line-height: 2.3;
-  font-size: 80px;
+  font-size: clamp(50px, 7vw, 80px);
   color: #252422;
 }
 
@@ -571,7 +551,7 @@ section.little_services div.little_services_wrapper div.little_services_experien
   font-family: Bozon-black;
   display: block;
   text-align: center;
-  font-size: 100px;
+  font-size: clamp(55px, 8vw, 100px);
   line-height: 1;
   letter-spacing: 5px;
   color: transparent;
@@ -584,7 +564,8 @@ section.little_services div.little_services_wrapper div.little_services_experien
 
 section.little_services div.little_services_wrapper button.browse_about {
   margin-top: 50px;
-  width: 320px;
+  margin-bottom: 50px;
+  width: clamp(150px, 40vw, 320px);
   height: 60px;
   border: 1px solid white;
   border-radius: 5px;
@@ -600,8 +581,17 @@ section.little_services div.little_services_wrapper button.browse_about a {
   font-family: Bozon book;
   display: block;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: clamp(16px, 3vw, 26px);
   color: white;
+}
+
+@media (max-width: 768px) {
+  section.little_services div.little_services_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 footer {
