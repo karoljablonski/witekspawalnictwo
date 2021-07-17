@@ -121,6 +121,7 @@ section.little_gallery {
 
             div.little_gallery_img {
                 width: 45%;
+                height: clamp(40vh, 60vh, 70vh);
 
                 img {
                     width: 200%;

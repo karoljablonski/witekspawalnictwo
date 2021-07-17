@@ -10,6 +10,7 @@ section.little_about {
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
+        overflow-x: hidden;
 
         &>* {
             width: 40%; //dla mediaqueries malych wyswietlaczy zmieniac, zeby <p> bylo na srodku
@@ -17,11 +18,10 @@ section.little_about {
         }
 
         header.section_content {
-            // width: 100%;
-            // text-align: center;
+
 
             p {
-                width: unset;
+                // width: unset;
                 // font-family: Bozon book;
                 // line-height: 2.3;
                 // // font-size: 80px;

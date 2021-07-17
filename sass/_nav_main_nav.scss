@@ -33,25 +33,45 @@ nav.main_nav {
             &.show_button {
                 display: block;
             }
+
+            //ponizej: szerokosc buttona!
+            span.hamburger-inner,
+            .hamburger--collapse,
+            .hamburger-inner::after,
+            .hamburger-inner::before {
+                width: 35px;
+            }
         }
 
         ul {
-            width: 70%;
+            width: 50%;
             list-style: none;
             display: flex;
             justify-content: space-around;
             align-items: center;
             transition: 0.5s;
 
+            &.show_ul {
+                display: flex;
+            }
+
             li {
                 width: 25%;
+                text-align: center;
+                // border: 1px solid blue;
 
 
                 &:nth-child(1) {
                     a {
                         color: $element-color;
                         text-align: center;
-                        //padding: 3px; //dodac w mediaqueries dla malych wyswietlaczy to sie bedzie rowno wyswietlac
+
+                        padding: 3px; //dodac w mediaqueries dla malych wyswietlaczy to sie bedzie rowno wyswietlac
+
+                        &:hover,
+                        &:active {
+                            color: $nav-links-color;
+                        }
                     }
                 }
 
@@ -75,12 +95,27 @@ nav.main_nav {
     }
 }
 
-// @media (max-width: 350px) {
-//     nav.main_nav {
-//         div.main_nav_wrapper {
-//             ul {
-//                 display: none;
-//             }
-//         }
-//     }
-// }
+@media (max-width: 720px) {
+    nav.main_nav {
+        div.main_nav_wrapper {
+            ul {
+                width: 60%;
+            }
+        }
+    }
+}
+
+// tutaj kod do pokazania sie burgera:
+@media(max-width: 550px) {
+    nav.main_nav {
+        div.main_nav_wrapper {
+            button.hamburger {
+                display: block;
+            }
+
+            ul {
+                display: none;
+            }
+        }
+    }
+}
