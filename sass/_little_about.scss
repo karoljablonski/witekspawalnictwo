@@ -1,6 +1,6 @@
 section.little_about {
     width: 100%;
-    min-height: 90vh;
+    min-height: clamp(40vh, 80vh, 100vh);
     // padding-bottom: clamp(50px, 5vh, 10vh);
     background-color: $forth-color;
 
@@ -90,7 +90,7 @@ section.little_about {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint_768) {
     section.little_about {
 
         div.little_about_wrapper {

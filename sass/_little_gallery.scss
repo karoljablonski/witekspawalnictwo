@@ -1,5 +1,5 @@
 section.little_gallery {
-    height: 100vh;
+    min-height: clamp(70vh, 80vh, 100vh);
     background-color: $logo-color;
 
     div.little_gallery_img_wrapper {
@@ -8,24 +8,25 @@ section.little_gallery {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        padding-top: 50px;
+        padding: clamp(20px, 5vh, 50px) 0;
 
 
         div.little_gallery_img {
-            margin-top: 5vh;
+            margin-top: clamp(10px, 5vh, 25px);
+            margin-bottom: 5px;
             position: relative;
             width: 30%;
-            height: 50vh;
+            height: clamp(30vh, 40vh, 50vh);
             overflow: hidden;
             border-radius: 15px;
 
             &:nth-child(1),
             &:nth-child(3) {
-                height: 70vh;
+                height: clamp(40vh, 60vh, 70vh);
             }
 
             img {
-                width: 150%;
+                width: 165%;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -60,8 +61,7 @@ section.little_gallery {
             bottom: 10vh;
             left: 50%;
             transform: translateX(-50%);
-            // width: 320px;
-            width: $button-width;
+            width: clamp(150px, 40vw, 270px);
             height: 60px;
             border: 1px solid white;
             border-radius: 5px;
@@ -109,5 +109,23 @@ section.little_gallery {
     100% {
         opacity: 0;
         visibility: hidden;
+    }
+}
+
+@media (max-width: $breakpoint_768) {
+    section.little_gallery {
+        div.little_gallery_img_wrapper {
+            padding-bottom: clamp(40px, 20vh, 180px);
+            flex-wrap: wrap;
+
+
+            div.little_gallery_img {
+                width: 45%;
+
+                img {
+                    width: 200%;
+                }
+            }
+        }
     }
 }

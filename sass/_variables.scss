@@ -21,11 +21,12 @@
 }
 
 //breakpoints:
+$breakpoint_768: 768px;
 $desktop-breakpoint: 1300px;
-$tablet-breakpoint: 1100px;
-$small_tablet-breakpoint: 900px;
-$smartphone-breakpoint: 768px;
-$smartphone-590width-breakpoint: 590px;
+// $tablet-breakpoint: 1100px;
+// $small_tablet-breakpoint: 900px;
+// $smartphone-breakpoint: 768px;
+// $smartphone-590width-breakpoint: 590px;
 
 
 
@@ -65,4 +66,5 @@ $button-fz: clamp(16px, 3vw, 26px);
     line-height: 2.3;
     font-size: clamp(50px, 7vw, 80px);
     color: $logo-color;
+    // overflow-x: hidden;
 }

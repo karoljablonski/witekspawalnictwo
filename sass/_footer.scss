@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    height: 35vh;
+    height: clamp(25vw, 30vw, 35vw);
     background-color: $third-color;
 
     div.footer_wrapper {
@@ -10,17 +10,15 @@ footer {
         justify-content: space-between;
         align-items: center;
         align-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
 
         &>* {
-            width: 35%;
+            width: 50%;
             color: $fifth-color;
-            // background-color: $fifth-color;
         }
 
         div {
-            height: 80%;
-            border-radius: 20px;
+            height: 90%;
             text-align: center;
         }
 
@@ -30,10 +28,9 @@ footer {
             flex-direction: column;
             justify-content: center;
             line-height: 2;
-            align-items: flex-end;
 
             p {
-                font-size: 1.8rem;
+                font-size: clamp(12px, 2vw, 20px);
             }
 
             p.firm_name {
@@ -41,6 +38,7 @@ footer {
             }
 
             button.google_maps {
+                margin: 5px auto;
                 width: 200px;
                 height: 45px;
                 cursor: pointer;
@@ -65,52 +63,54 @@ footer {
         }
 
         div.separator {
-            height: 80%;
+            height: 90%;
             width: 1px;
             background-color: $fifth-color;
-            justify-self: center;
+            // justify-self: center;
+            align-self: center;
         }
 
         div.contact_data {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            // align-items: flex-start;
 
             p {
                 font-family: Bozon bold;
-                font-size: 1.8rem;
+                font-size: clamp(12px, 2vw, 20px);
                 line-height: 2;
                 align-items: left;
             }
         }
 
-        p.real_footer {
-            position: relative;
-            width: 100%;
-            padding: 10px;
-            text-align: center;
+    }
+
+    p.real_footer {
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-family: Bozon;
+        color: $fifth-color;
+        font-size: 1.5rem;
+        background-color: $third-color;
+
+        &::before {
+            content: '';
+            width: 90%;
+            position: absolute;
+            top: 0;
+            left: 5%;
+            height: 1px;
+            background-color: $fifth-color;
+
+        }
+
+        a {
             font-family: Bozon;
             color: $fifth-color;
             font-size: 1.5rem;
-            background-color: rgba(0, 0, 0, 0);
-
-            &::before {
-                content: '';
-                width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 1px;
-                background-color: $fifth-color;
-
-            }
-
-            a {
-                font-family: Bozon;
-                color: $fifth-color;
-                font-size: 1.5rem;
-            }
         }
     }
 }

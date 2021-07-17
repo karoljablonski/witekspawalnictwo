@@ -1,6 +1,6 @@
 section.little_services {
     width: 100%;
-    min-height: 90vh;
+    min-height: clamp(40vh, 80vh, 100vh);
     background-color: $forth-color;
 
     div.little_services_wrapper {
@@ -90,7 +90,7 @@ section.little_services {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $breakpoint_768) {
     section.little_services {
 
         div.little_services_wrapper {
