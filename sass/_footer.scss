@@ -1,6 +1,7 @@
 footer {
     width: 100%;
     height: clamp(25vw, 30vw, 35vw);
+    max-height: 350px;
     background-color: $third-color;
 
     div.footer_wrapper {
@@ -30,7 +31,7 @@ footer {
             line-height: 2;
 
             p {
-                font-size: clamp(12px, 2vw, 20px);
+                font-size: clamp(14px, 2vw, 20px);
             }
 
             p.firm_name {
@@ -39,7 +40,7 @@ footer {
 
             button.google_maps {
                 margin: 5px auto;
-                width: 200px;
+                width: $button-width;
                 height: 45px;
                 cursor: pointer;
                 border: 2px solid $fifth-color;
@@ -78,7 +79,7 @@ footer {
 
             p {
                 font-family: Bozon bold;
-                font-size: clamp(12px, 2vw, 20px);
+                font-size: clamp(14px, 2vw, 20px);
                 line-height: 2;
                 align-items: left;
             }
@@ -93,7 +94,7 @@ footer {
         text-align: center;
         font-family: Bozon;
         color: $fifth-color;
-        font-size: 1.5rem;
+        font-size: clamp(12px, 2vw, 20px);
         background-color: $third-color;
 
         &::before {
@@ -112,5 +113,41 @@ footer {
             color: $fifth-color;
             font-size: 1.5rem;
         }
+    }
+}
+
+@media (max-width: 350px) {
+    footer {
+        height: 70vh;
+
+        div.footer_wrapper {
+            max-height: unset;
+            flex-direction: column;
+
+            &>* {
+                height: 33%;
+            }
+
+            div.firm_data {
+                button.google_maps {
+                    height: 30px;
+                }
+            }
+
+            div.separator {
+                height: 1px;
+                width: 90%;
+                background-color: $fifth-color;
+                // justify-self: center;
+                align-self: center;
+            }
+
+            div.contact_data {
+                // position: relative;
+                width: 100%;
+            }
+        }
+
+        // p.real_footer {}
     }
 }

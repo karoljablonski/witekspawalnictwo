@@ -17,8 +17,11 @@ section.little_about {
         }
 
         header.section_content {
+            // width: 100%;
+            // text-align: center;
 
             p {
+                width: unset;
                 // font-family: Bozon book;
                 // line-height: 2.3;
                 // // font-size: 80px;
@@ -46,7 +49,7 @@ section.little_about {
             display: block;
             text-align: center;
             // font-size: 450px;
-            font-size: clamp(200px, 40vw, 450px);
+            font-size: clamp(170px, 40vw, 450px);
             line-height: .9;
             letter-spacing: 5px;
             color: transparent;
@@ -56,7 +59,7 @@ section.little_about {
                 font-family: Bozon bold;
 
                 text-align: center;
-                font-size: 40px;
+                font-size: clamp(25px, 4vw, 40px);
                 text-align: center;
                 color: $forth-color;
             }
@@ -98,3 +101,28 @@ section.little_about {
         }
     }
 }
+
+@media (max-width: 630px) {
+    section.little_about {
+        div.little_about_wrapper {
+
+            header.section_content {
+                width: 100%;
+                text-align: center;
+                // p {
+                //     // width: 90%;
+                //     text-align: center;
+                // }
+            }
+        }
+    }
+}
+
+// @media (max-width: 350px) {
+//     section.little_about {
+//         div.little_about_wrapper {
+
+//             header.section_content {}
+//         }
+//     }
+// }

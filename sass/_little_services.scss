@@ -27,9 +27,9 @@ section.little_services {
                 @include little_header_p;
             }
 
-            p.wide_word {
-                width: 150%;
-            }
+            // p.wide_word {
+            //     width: 150%;
+            // }
         }
 
 
@@ -49,7 +49,7 @@ section.little_services {
                 font-family: Bozon-black;
                 display: block;
                 text-align: center;
-                font-size: clamp(55px, 8vw, 100px);
+                font-size: clamp(50px, 8vw, 100px);
                 line-height: 1;
                 letter-spacing: 5px;
                 color: transparent;
@@ -95,6 +95,24 @@ section.little_services {
 
         div.little_services_wrapper {
             flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    section.little_services {
+        div.little_services_wrapper {
+
+            header.services_content {
+                width: 100%;
+                text-align: center;
+
+                p {
+                    p.wide_word {
+                        width: 50%;
+                    }
+                }
+            }
         }
     }
 }

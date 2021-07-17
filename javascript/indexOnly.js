@@ -20,6 +20,6 @@ window.addEventListener("scroll", function(){
     if(valueY > (sekcjaServices.offsetTop - window.innerHeight)){
     bramy.style.marginLeft = -.15 * (valueY - sekcjaServices.offsetTop) + "px";
     maszyny.style.marginLeft = .1 * (valueY - sekcjaServices.offsetTop) + "px";
-    konstrukcje.style.marginLeft = -.1 * (valueY - sekcjaServices.offsetTop) + "px";
+    konstrukcje.style.marginLeft = -.1 * (valueY - konstrukcje.offsetTop) + "px";
     }
 });
