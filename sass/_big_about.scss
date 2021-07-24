@@ -11,14 +11,15 @@ header.about_header {
         bottom: 5%;
         left: 15%;
         font-family: Bozon bold;
-        font-size: 7rem;
+        font-size: clamp(5rem, 6vw, 7rem);
         color: $forth-color;
     }
 }
 
 section.big_about {
 
-    height: 180vh;
+    // height: 180vh;
+    height: clamp(1000px, 180vh, 2000px);
     background-color: $logo-color;
     display: flex;
 
@@ -31,9 +32,13 @@ section.big_about {
         width: 90%;
         margin: auto;
 
+        &>* {
+            height: 95%;
+        }
+
         div.big_about_img {
             width: 45%;
-            height: 90%;
+            // min-height: 90%;
             background: url(../img/welding-2819144_1920.jpg);
             background-size: cover;
             background-position: 40% 20%;
@@ -43,7 +48,7 @@ section.big_about {
 
         div.p-wrapper {
             width: 45%;
-            height: 90%;
+            // height: 90%;
             background-color: rgba($fifth-color, 0.5);
             overflow: hidden;
             font-family: Bozon book;
@@ -57,7 +62,8 @@ section.big_about {
 
 
                 p {
-                    font-size: 2rem;
+                    // font-size: 2rem;
+                    font-size: clamp(1.5rem, 2vw, 2rem);
                     line-height: 2;
                     padding: 3rem;
                     width: 100%;
@@ -71,16 +77,20 @@ section.big_about {
 
                     li {
                         position: relative;
-                        padding: 15px 0 15px 50px;
+                        padding-left: 50px;
+                        padding-top: clamp(3px, 3vw, 15px);
+                        padding-bottom: clamp(3px, 3vw, 15px);
+                        // padding: 15px 0 15px 50px;
                         display: block;
-                        font-size: 1.8rem;
+                        // font-size: 1.8rem;
+                        font-size: clamp(1.3rem, 2.5vw, 1.8rem);
                         color: $forth-color;
                         text-align: left;
 
                         &::before {
                             content: "";
                             position: absolute;
-                            bottom: 14px;
+                            bottom: clamp(3px, 3vw, 15px);
                             left: auto;
                             height: 1px;
                             width: 0;
@@ -111,6 +121,55 @@ section.big_about {
                         // &:nth-child(5) {
                         //     margin-left: 100px;
                         // }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1165px) {
+    section.big_about {
+        // background-color: red;
+
+        div.big_about_wrapper {
+            // justify-content: center;
+            display: block;
+            position: relative;
+
+            &>* {
+                width: 70%;
+            }
+
+            div.big_about_img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: inherit;
+                transform: translate(-50%, -50%);
+                filter: opacity(30%);
+            }
+
+            div.p-wrapper {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: inherit;
+                z-index: 5;
+                background-color: transparent;
+
+                article.about_me {
+
+                    // p {
+                    // }
+                    ul {
+                        margin: 0 auto;
+
+                        li {
+                            padding-left: 0;
+                            text-align: center;
+                        }
                     }
                 }
             }
