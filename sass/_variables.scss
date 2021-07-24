@@ -52,6 +52,11 @@ $fifth-color: #403d39;
     transition: 0.5s;
 }
 
+.sticky {
+    position: sticky;
+    left: 0;
+}
+
 @mixin desktop-breakpoint-wrapper {
     max-width: $desktop-breakpoint;
     margin: 0 auto;

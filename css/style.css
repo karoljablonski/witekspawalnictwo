@@ -45,6 +45,12 @@ body {
   transition: 0.5s;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+}
+
 section.information {
   width: 100%;
   background-color: #a77676;
@@ -1070,13 +1076,13 @@ section.big_gallery div.big_gallery_wrapper {
 }
 
 section.big_gallery div.big_gallery_wrapper nav.gallery_navigation {
-  margin-top: 7em;
+  left: 0;
   width: 100%;
-  height: 100px;
-}
-
-section.big_gallery div.big_gallery_wrapper nav.gallery_navigation p {
-  width: 100%;
+  height: 130px;
+  padding: 20px;
+  background-color: #fffcf2;
+  z-index: 50;
+  border-bottom: 0.1px solid rgba(220, 220, 220, 0.9);
 }
 
 section.big_gallery div.big_gallery_wrapper nav.gallery_navigation ul {
@@ -1100,6 +1106,10 @@ section.big_gallery div.big_gallery_wrapper nav.gallery_navigation ul li {
   text-align: center;
 }
 
+section.big_gallery div.big_gallery_wrapper nav.gallery_navigation ul li:checked {
+  background-color: red;
+}
+
 section.big_gallery div.big_gallery_wrapper nav.gallery_navigation ul li label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1117,8 +1127,9 @@ section.big_gallery div.big_gallery_wrapper nav.gallery_navigation ul li label {
   border: 1px solid white;
   border-radius: 5px;
   font-family: Bozon book;
-  font-size: 2rem;
+  font-size: clamp(13px, 2vw, 20px);
   color: white;
+  padding: 2px;
   cursor: pointer;
 }
 
@@ -1157,14 +1168,14 @@ section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper di
 section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div {
   position: relative;
   margin: 30px 0;
-  width: 28%;
+  width: 24%;
   height: 200px;
   overflow: hidden;
   border-radius: 15px;
 }
 
 section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div a img {
-  width: 100%;
+  width: 120%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1194,6 +1205,76 @@ section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper di
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 1100px) {
+  section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div {
+    width: 30%;
+  }
+}
+
+@media (max-width: 920px) {
+  section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  section.big_gallery div.big_gallery_wrapper nav.gallery_navigation {
+    height: 90px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 635px) {
+  section.big_gallery div.big_gallery_wrapper nav.gallery_navigation {
+    height: 110px;
+    padding: 5px;
+  }
+  section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div {
+    height: 175px;
+    width: 47%;
+  }
+  section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div a img {
+    width: 125%;
+  }
+}
+
+@media (max-width: 490px) {
+  section.big_gallery div.big_gallery_wrapper nav.gallery_navigation {
+    height: 100px;
+    padding: 7.5px;
+  }
+  section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div {
+    height: 150px;
+    width: 45%;
+  }
+  section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div a img {
+    width: 125%;
+  }
+}
+
+@media (max-width: 400px) {
+  section.big_gallery div.big_gallery_wrapper nav.gallery_navigation {
+    height: 100px;
+    padding: 7.5px;
+  }
+  section.big_gallery div.big_gallery_wrapper nav.gallery_navigation ul {
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.big_gallery div.big_gallery_wrapper nav.gallery_navigation ul li {
+    width: 30%;
+  }
+  section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div {
+    height: 150px;
+    width: 80%;
+  }
+  section.big_gallery div.big_gallery_wrapper section.single_categories_wrapper div.category_wrapper div a img {
+    width: 125%;
+  }
 }
 
 header.services_header {
