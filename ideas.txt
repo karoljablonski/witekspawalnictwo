@@ -1,4 +1,7 @@
 big_gallery:
 mozna zrobic przycisk, ktory 'chowalby' nawigacje po zdjeciach, po kliknieciu sie chowa, oraz wystaje maly przycisk, zeby moc rozwinac.
+dodac oznaczenie kolorem na 'kategorie' wybranych zdjec
+
 
 ogolnie: przycisk powrotu na gore strony
+
